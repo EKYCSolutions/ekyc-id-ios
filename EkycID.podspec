@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '1.0.11'
+  s.version          = '1.0.12'
   s.summary          = 'An SDK to interact with EkycID services.'
   s.description      = <<-DESC
   An SDK to interact with EkycID services.
@@ -17,20 +17,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  if ENV['POD_DEVELOPMENT'] == '1'
-    s.source_files = 'EkycID/Classes/**/*'
-    s.static_framework = true
-    s.resource_bundles = {
-      'EkycID' => ['EkycID/Assets/*']
-    }
-  else
-    s.public_header_files = "EkycID.framework/Headers/*.h"
-    s.source_files = "EkycID.framework/Headers/*.h"
-    s.vendored_frameworks = "EkycID.framework"
-    s.resource_bundles = {
-      'EkycID' => ['EkycID/Assets/*']
-    }
-  end
+  s.public_header_files = "EkycID.framework/Headers/*.h"
+  s.source_files = "EkycID.framework/Headers/*.h"
+  s.vendored_frameworks = "EkycID.framework"
+  s.resource_bundles = {
+    'EkycID' => ['EkycID/Assets/*']
+  }
 
 
   s.dependency 'TensorFlowLiteSwift', '0.0.1-nightly.20211127'

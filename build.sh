@@ -1,0 +1,1 @@
+pod trunk push EkycID.podspec --verbose --skip-import-validation --allow-warnings
