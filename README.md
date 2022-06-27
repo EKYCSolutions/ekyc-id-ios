@@ -1,5 +1,5 @@
 
-![image](https://user-images.githubusercontent.com/81238558/175767662-be4dc9ba-a6bd-459d-aaa3-f8ad0c96aa37.png)
+![ekyc-logo](https://user-images.githubusercontent.com/81238558/175898415-4c0f508f-c2d5-4b3d-afba-f531551520d6.png)
 
 # EkycID SDK for iOS
 
