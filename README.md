@@ -6,7 +6,7 @@
 ![](https://img.shields.io/badge/platform-ios-blue) ![](https://img.shields.io/github/v/tag/EKYCSolutions/ekyc-id-ios?label=version)
 
 
-The EkycID iOS SDK lets you build a factastic OCR and Face Recognition experienced in your iOS app.
+The EkycID iOS SDK lets you build a fantastic OCR and Face Recognition experienced in your iOS app.
 
 With one quick scan, your users will be able to extract information from thier identity cards, passports, driver licenses, license plate, vehicle registration, covid-19 vaccinate card, and any other document by government-issued.
 
@@ -33,7 +33,7 @@ This guide closely follows the BlinkID-Sample app in the Samples folder of this 
 
 The source code of the sample app can be used as the reference during the integration.
 
-## SDK initial ntegration
+## 1. SDK initial ntegration
 
 EKYCMLSDKIOS is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -42,7 +42,7 @@ it, simply add the following line to your Podfile:
 pod 'EkycID'
 ```
 
-## Referencing header file
+## 2. Referencing header file
 In files in which you want to use scanning functionality place import directive.</br>
 Swift
 
@@ -50,7 +50,7 @@ Swift
 import EkycID
 ```
 
-## Initiating the scanning process
+## 3. Initiating the scanning process
 To initiate the scanning process, first decide where in your app you want to add scanning functionality. Usually, users of the scanning library have a button which, when tapped, starts the scanning process. Initialization code is then placed in touch handler for that button. Here we're listing the initialization code as it looks in a touch handler method.</br>
 Swift:
 
@@ -108,7 +108,7 @@ class ViewController: UIViewController, DocumentScannerEventListener {
 
 
 
-# Device Requirement
+# 4. Device Requirement
 ### iOS Version
 Currently EkycID require iOS 10 or newer.
 
