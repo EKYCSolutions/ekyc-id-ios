@@ -134,7 +134,7 @@ class ViewController: UIViewController, DocumentScannerEventListener {
 
 <h1>Device Requirement</h1>
 <h3 dir="auto">iOS Version</h3>
-<p>Currently EkycID require iOS 12 or newer. For best performance and compatibility, we recommend at least Iphone 6.</p>
+<p>Currently EkycID require iOS 10 or newer.</p>
 
 <h3 dir="auto">Cemera</h3>
 <p>Camera video preview resolution also matters. In order to perform successful scans, camera preview resolution must be at least 720p. Note that camera preview resolution is not the same as video recording resolution.</p>
