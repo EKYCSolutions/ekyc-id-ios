@@ -25,41 +25,65 @@ EkycID can:
 
 To see all of these features at work download our free demo app at PlayStore. For iOS device is recently in review from apple, you can try it on TestFlight by contact our developers.
 
+# 1. Requirements
 
-# Get Started
-This Quick Start guide will get you up and performing OCR scanning as quickly as possible. All steps described in this guide are required for the integration.
+- Minimum iOS Deployment Target: 10.0
+- Xcode 13 or newer
+- Swift 5
+- EkycID only supports 64-bit architectures (x86_64 and arm64).
 
-This guide closely follows the BlinkID-Sample app in the Samples folder of this repository. We highly recommend you try to run the sample app. The sample app should compile and run on your device, and in the iOS Simulator.
+# 2. Installation
 
-The source code of the sample app can be used as the reference during the integration.
+**Step 1:** Add the following to your Info.plist.
+```xml
+<!-- Camera Access -->
+<key>NSCameraUsageDescription</key>
+<string>Camera Access for Scanning</string>
+```
 
-## 1. SDK initial ntegration
+**Step 2:** Go to Project > Runner > Building Settings > Excluded Architectures > Any SDK > armv7
 
-EKYCMLSDKIOS is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+**Step 3:** Make adjustments to your Podfile as shown below.
+
+```ruby
+# add this line:
+$iOSVersion = '10.0'
+
+post_install do |installer|
+  # add these lines:
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=*]"] = "armv7"
+    config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = $iOSVersion
+  end
+  
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+    
+    # add these lines:
+    target.build_configurations.each do |config|
+      if Gem::Version.new($iOSVersion) > Gem::Version.new(config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'])
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = $iOSVersion
+      end
+    end
+    
+  end
+end
+```
+
+**Step 4:** Add the following line to your Podfile. Then run `pod install.`
 
 ```ruby
 pod 'EkycID'
 ```
 
-## 2. Referencing header file
-In files in which you want to use scanning functionality place import directive.</br>
-Swift
+# 3. Usage
 
-```ruby
-import EkycID
-```
+## 3.1. Document Scanner
 
-## 3. Initiating the scanning process
-To initiate the scanning process, first decide where in your app you want to add scanning functionality. Usually, users of the scanning library have a button which, when tapped, starts the scanning process. Initialization code is then placed in touch handler for that button. Here we're listing the initialization code as it looks in a touch handler method.</br>
-Swift:
-
-```ruby
-import UIKit
-import EkycID
-import CoreGraphics
-
+```swift
 class ViewController: UIViewController, DocumentScannerEventListener {
+    var cameraView: DocumentScannerCameraView!
+
     func onInitialize() {
         print("onInitialize")
     }
@@ -76,8 +100,6 @@ class ViewController: UIViewController, DocumentScannerEventListener {
         }
     }
     
-    var cameraView: DocumentScannerCameraView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -89,8 +111,70 @@ class ViewController: UIViewController, DocumentScannerEventListener {
             frame: self.view.frame,
             options: DocumentScannerOptions(preparingDuration: 1)
         )
-
         self.cameraView!.setWhiteList(whiteList: ["NATIONAL_ID"])
+        self.cameraView.addListener(self)
+        
+        self.view.addSubview(self.cameraView)
+        
+        self.cameraView.start()
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.cameraView.stop()
+    }
+}
+```
+
+## 3.2. Liveness Detection
+
+```swift
+class ViewController: UIViewController, LivenessDetectionEventListener {
+
+    func onCountDownChanged(current: Int, max: Int) {
+        print("current: \(current), max: \(max)")
+    }
+
+    func onFocus() {
+        print("onFocus fish")
+    }
+
+    func onFocusDropped() {
+        print("onFocusDropped")
+    }
+
+    func onPromptCompleted(completedPromptIndex: Int, success: Bool, progress: Float) {
+        print("onPromptCompleted: \(completedPromptIndex), \(success), \(progress)")
+        self.cameraView.nextImage()
+    }
+
+    func onAllPromptsCompleted(detection: LivenessDetectionResult) {
+        print("onAllPromptsCompleted")
+    }
+
+
+    func onInitialize() {
+        print("onInitialize")
+    }
+
+    func onFrame(frameStatus: FrameStatus) {
+        if frameStatus != .PROCESSING {
+            print("\(frameStatus)")
+        }
+    }
+    
+    var cameraView: LivenessDetectionCameraView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.cameraView = LivenessDetectionCameraView(
+            frame: self.view.frame,
+            options: LivenessDetectionOptions(prompts: [LivenessPromptType.BLINKING, LivenessPromptType.LOOK_RIGHT], promptTimerCountDownSec: 5)
+        )
         self.cameraView.addListener(self)
         
         self.view.addSubview(self.cameraView)
@@ -106,18 +190,14 @@ class ViewController: UIViewController, DocumentScannerEventListener {
 
 ```
 
+## 3.3. Perform Face Compare and OCR
 
+To perform face compare and ocr, you can call your server that integrated with our [NodeSDK]() to get face compare score and ocr response respectively.
 
-# 4. Device Requirement
-### iOS Version
-Currently EkycID require iOS 10 or newer.
+# 4. Contact
+<p>For any other questions, feel free to contact us at 
+  <a href="https://ekycsolutions.com/">ekycsolutions.com</a>
+</p>
 
-### Cemera
-Camera video preview resolution also matters. In order to perform successful scans, camera preview resolution must be at least 720p. Note that camera preview resolution is not the same as video recording resolution.
-
-## Contact
-For any other questions, feel free to contact us at <a href="https://ekycsolutions.com/">ekycsolutions.com</a>.
-
-## License
-
+# 5. License
 © 2022 EKYC Solutions Co, Ltd. All rights reserved.
