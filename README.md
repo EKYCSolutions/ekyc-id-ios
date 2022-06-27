@@ -43,6 +43,8 @@ To see all of these features at work download our free demo app at PlayStore. Fo
 
 **Step 2:** Go to Project > Runner > Building Settings > Excluded Architectures > Any SDK > armv7
 
+![](doc/build_settings_01.png)
+
 **Step 3:** Make adjustments to your Podfile as shown below.
 
 ```ruby
