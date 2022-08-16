@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '1.0.12'
+  s.version          = '1.0.15'
   s.summary          = 'An SDK to interact with EkycID services.'
   s.description      = <<-DESC
   An SDK to interact with EkycID services.
@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
   s.dependency 'TensorFlowLiteSwift', '0.0.1-nightly.20211127'
   s.dependency 'OpenCV', '4.3.0'
   s.dependency 'GoogleMLKit/FaceDetection', '2.5.0'
-  
+  s.dependency 'MultipartForm', '0.1.0'
 end
