@@ -1,0 +1,11 @@
+framework module EkycID {
+  umbrella header "EkycID-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module EkycID.Swift {
+    header "EkycID-Swift.h"
+    requires objc
+}
