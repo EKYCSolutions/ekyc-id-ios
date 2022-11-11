@@ -19,10 +19,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OpenCVWrapper : NSObject
++ (bool) isBlur: (UIImage*) inputImage;
 + (UIImage*) gray: (UIImage*) inputImage;
 + (UIImage*) canny: (UIImage*) inputImage :(double) threshold1 :(double) threshold2;
 + (NSArray*) houghline: (UIImage *) mask :(double) cannyThreshold;
 + (UIImage*) warpImage: (UIImage *) src :(NSArray *) corners;
+
 @end
 
 NS_ASSUME_NONNULL_END
