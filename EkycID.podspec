@@ -29,4 +29,5 @@ Pod::Spec.new do |s|
   s.dependency 'OpenCV', '4.3.0'
   s.dependency 'GoogleMLKit/FaceDetection', '2.5.0'
   s.dependency 'MultipartForm', '0.1.0'
+  s.dependency 'lottie-ios', '3.4.2'
 end
