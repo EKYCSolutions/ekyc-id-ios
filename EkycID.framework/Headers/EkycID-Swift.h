@@ -272,6 +272,13 @@ SWIFT_CLASS("_TtC6EkycID22DocumentScannerOverlay")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6EkycID19DocumentScannerView")
+@interface DocumentScannerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
 @class NSString;
 @class NSBundle;
 
@@ -306,6 +313,14 @@ SWIFT_CLASS("_TtC6EkycID24LivenessDetectionOverlay")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_CLASS("_TtC6EkycID21LivenessDetectionView")
+@interface LivenessDetectionView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
 
 
 SWIFT_CLASS("_TtC6EkycID31LivenessDetectionViewController")
