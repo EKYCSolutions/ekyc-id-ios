@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '1.0.21'
+  s.version          = '1.0.22'
   s.summary          = 'An SDK to interact with EkycID services.'
   s.description      = <<-DESC
   An SDK to interact with EkycID services.
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Socret Lee' => 'ml-developer@ekycsolutions.com' }
   s.source           = { :git => 'https://github.com/EKYCSolutions/ekyc-id-ios.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.public_header_files = "EkycID.framework/Headers/*.h"
   s.source_files = "EkycID.framework/Headers/*.h"
