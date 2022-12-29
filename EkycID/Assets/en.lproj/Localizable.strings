@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by keanghok on 16/11/22.
+  
+*/
+
+
+"INITIALIZING" = "Initializing";
+"SCAN_MAIN" = "Scan the front of the document";
+"PROCESSING" = "Processing";
+"PREPARING" = "Preparing";
+"SCAN_BACK" = "Scan the back of the document";
+
+
+// document
+
+"DOCUMENT_FOUND" = "Document Found";
+"DOCUMENT_TOO_BIG" = "Move Closer";
+"DOCUMENT_TOO_SMALL" = "Move Back";
+"DOCUMENT_NOT_IN_CENTER" = "Place the object at the center";
+"DOCUMENT_BLUR" = "Blurry Document";
+"CANNOT_GRAB_DOCUMENT" = "Cannot grab document";
+"CANNOT_GRAB_FACE" = "Cannot grab face";
+
+
+
+// liveness
+
+"NO_FACE_FOUND" = "Place face at the center";
+"FACE_FOUND" = "Face found";
+"MULTIPLE_FACES_FOUND" = "Multiple faces found";
+"FACE_TOO_BIG" = "Face too big";
+"FACE_TOO_SMALL" = "Face too small";
+"FACE_NOT_IN_CENTER" = "Place face at the center";
+
+"LOOK_RIGHT" = "Turn Head - Right";
+"LOOK_LEFT" = "Turn Head - Left";
+"BLINKING" = "Blinking";
+
+"FACE_BLOCKAGE_FOUND" = "Please remove mask or glasses";
+

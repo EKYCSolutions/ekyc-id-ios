@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by keanghok on 16/11/22.
+  
+*/
+"INITIALIZING" = "កំពុងចាប់ផ្តេីម";
+"SCAN_MAIN" = "ស្កេនផ្នែកខាងមុខនៃឯកសារ";
+"PROCESSING" = "ដំណើរការ";
+"PREPARING" = "កំពុងរៀបចំ";
+"SCAN_BACK" = "ស្កេនផ្នែកខាងក្រោយនៃឯកសារ";
+"DOCUMENT_FOUND" = "ឯកសារត្រូវបានរកឃើញ";
+"DOCUMENT_TOO_BIG" = "កាន់អោយឆ្ងាយ";
+"DOCUMENT_TOO_SMALL" = "កាន់អោយជិត";
+"DOCUMENT_NOT_IN_CENTER" = "ដាក់ឯកសារនៅកណ្តាល";
+"CANNOT_GRAB_DOCUMENT" = "មិនអាចចាប់យកឯកសារបានទេ";
+"DOCUMENT_BLUR" = "រូបកាតមានសភាពមិនច្បាស់";
+"CANNOT_GRAB_FACE" = "មិនអាចទាញយកមុខចេញពីកាត";
+
+
+
+"NO_FACE_FOUND" = "ដាក់មុខនៅកណ្ដាល";
+"FACE_FOUND" = "ដំណើរការ";
+"MULTIPLE_FACES_FOUND" = "មុខច្រើនជាងម្នាក់";
+"FACE_TOO_BIG" = "មុខនៅជិតពេក";
+"FACE_TOO_SMALL" = "មុខនៅឆ្ងាយពេក";
+"FACE_NOT_IN_CENTER" = "ដាក់មុខនៅកណ្ដាល";
+
+"LOOK_RIGHT" = "ងាកស្ដាំ";
+"LOOK_LEFT" = "ងាកឆ្វេង";
+"BLINKING" = "ព្រិចភ្នែក";
+"FACE_BLOCKAGE_FOUND" = "សូមដោះម៉ាស ឬ វ៉ែនតា";
+
