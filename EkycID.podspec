@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'An SDK to interact with EkycID services.'
   s.description      = <<-DESC
   An SDK to interact with EkycID services.
