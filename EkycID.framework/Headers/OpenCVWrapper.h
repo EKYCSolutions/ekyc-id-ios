@@ -24,8 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage*) canny: (UIImage*) inputImage :(double) threshold1 :(double) threshold2;
 + (NSArray*) houghline: (UIImage *) mask :(double) cannyThreshold;
 + (UIImage*) warpImage: (UIImage *) src :(NSArray *) corners;
++ (double) detectHologram: (UIImage *) inputImage;
++ (void) calculateBackgroundColorHSVBound;
 
 @end
+
+
+
+
 
 NS_ASSUME_NONNULL_END
 

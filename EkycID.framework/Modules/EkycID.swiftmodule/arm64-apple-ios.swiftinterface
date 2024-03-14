@@ -1,0 +1,581 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 effective-4.1.50 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name EkycID
+import AVFoundation
+import Accelerate
+import AudioToolbox
+import CoreGraphics.CGImage
+import CoreGraphics
+@_exported import EkycID
+import Foundation
+import MLKitFaceDetection.MLKFace
+import MLKitFaceDetection
+import MLKitVision
+import Swift
+import TensorFlowLite
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @available(iOS 16.0, *)
+public class BlackWhiteDetection {
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.BlackWhiteDetectionOptions) -> EkycID.BlackWhiteDetection.Builder
+    public func setThreshold(threshold: Swift.Float) -> EkycID.BlackWhiteDetection.Builder
+    public func build() throws -> EkycID.BlackWhiteDetection
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol BlackWhiteDetectionAdapter {
+  func detect(image: UIKit.UIImage) -> Swift.Bool?
+}
+@available(iOS 16.0, *)
+public class BlackWhiteDetectionCOEFF : EkycID.BlackWhiteDetectionAdapter {
+  public init(threshold: Swift.Float)
+  public func detect(image: UIKit.UIImage) -> Swift.Bool?
+  @available(iOS 16.0, *)
+  public func process(image: UIKit.UIImage) -> Swift.Bool
+  public func corrCoeff(x: [Swift.Float], y: [Swift.Float]) -> Swift.Float
+  @objc deinit
+}
+public enum BlackWhiteDetectionOptions : Swift.String {
+  case COEFF
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class BlurDetection {
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.BlurDetectionOptions) -> EkycID.BlurDetection.Builder
+    public func setThreshold(threshold: Swift.Float) -> EkycID.BlurDetection.Builder
+    public func build() throws -> EkycID.BlurDetection
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol BlurDetectionAdapter {
+  func detect(image: UIKit.UIImage) -> Swift.Bool?
+}
+@_hasMissingDesignatedInitializers public class BlurDetectionCanny : EkycID.BlurDetectionAdapter {
+  public func detect(image: UIKit.UIImage) -> Swift.Bool?
+  public func process(image: UIKit.UIImage) throws -> Swift.Bool?
+  @objc deinit
+}
+public class BlurDetectionDWT : EkycID.BlurDetectionAdapter {
+  public init(threshold: Swift.Float)
+  public func detect(image: UIKit.UIImage) -> Swift.Bool?
+  public func process(img: UIKit.UIImage, minZero: Swift.Float = 0.001) throws -> Swift.Bool?
+  @objc deinit
+}
+public enum BlurDetectionOptions : Swift.String {
+  case CANNY
+  case DWT
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class BoundingBox {
+  public var x: Swift.Float
+  public var y: Swift.Float
+  public var w: Swift.Float
+  public var h: Swift.Float
+  public init(x: Swift.Float, y: Swift.Float, w: Swift.Float, h: Swift.Float)
+  @objc deinit
+}
+public protocol DocumentScannerCameraEventListener {
+  func onInitialize()
+  func onDetection(_ detection: EkycID.DocumentScannerResult)
+  func onFrame(_ frameStatus: EkycID.FrameStatus)
+}
+public class DocumentScannerCameraOptions {
+  public var preparingDuration: Swift.Int
+  public init(preparingDuration: Swift.Int = 3)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.DocumentScannerCameraEventListener)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.DocumentScannerCameraOptions?)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) public func setWhiteList(_ whiteList: [EkycID.ObjectDetectionObjectType])
+  @_Concurrency.MainActor(unsafe) @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc deinit
+}
+public protocol DocumentScannerEventListener {
+  func onDocumentScanned(mainSide: EkycID.DocumentScannerResult, secondarySide: EkycID.DocumentScannerResult?)
+  func onFrameStatusChanged(_ frameStatus: EkycID.FrameStatus)
+  func onCurrentSideChanged(_ currentSide: EkycID.DocumentSide)
+}
+public class DocumentScannerOptions {
+  public var cameraOptions: EkycID.DocumentScannerCameraOptions
+  public var scannableDocuments: [EkycID.ScannableDocument]
+  public init(cameraOptions: EkycID.DocumentScannerCameraOptions = DocumentScannerCameraOptions(), scannableDocuments: [EkycID.ScannableDocument] = [])
+  @objc deinit
+}
+public class ScannableDocument {
+  public var mainSide: EkycID.ObjectDetectionObjectType
+  public var secondarySide: EkycID.ObjectDetectionObjectType?
+  public init(mainSide: EkycID.ObjectDetectionObjectType, secondarySide: EkycID.ObjectDetectionObjectType? = nil)
+  @objc deinit
+}
+public enum DocumentSide : Swift.String {
+  case MAIN
+  case SECONDARY
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class DocumentScannerResult {
+  public var documentType: EkycID.ObjectDetectionObjectType
+  public var documentGroup: EkycID.ObjectDetectionObjectGroup
+  public var fullImage: UIKit.UIImage
+  public var documentImage: UIKit.UIImage
+  public var faceImage: UIKit.UIImage?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerView : UIKit.UIView, EkycID.DocumentScannerCameraEventListener {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.DocumentScannerOptions? = nil)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.DocumentScannerEventListener)
+  @_Concurrency.MainActor(unsafe) public func onInitialize()
+  @_Concurrency.MainActor(unsafe) public func onDetection(_ detection: EkycID.DocumentScannerResult)
+  @_Concurrency.MainActor(unsafe) public func onFrame(_ frameStatus: EkycID.FrameStatus)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EdgeDetection {
+  public func detect(image: CoreGraphics.CGImage) -> EkycID.EdgeDetectionResult?
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.EdgeDetectionModelType) -> EkycID.EdgeDetection.Builder
+    public func build() throws -> EkycID.EdgeDetection
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol EdgeDetectionAdapter {
+  func detect(image: CoreGraphics.CGImage) -> EkycID.EdgeDetectionResult?
+}
+public enum EdgeDetectionModelType : Swift.String {
+  case RED_BOUND
+  case SKSEG
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class EdgeDetectionResult {
+  public var topLeft: EkycID.Point
+  public var topRight: EkycID.Point
+  public var bottomLeft: EkycID.Point
+  public var bottomRight: EkycID.Point
+  public init(topLeft: EkycID.Point, topRight: EkycID.Point, bottomLeft: EkycID.Point, bottomRight: EkycID.Point)
+  public func toString()
+  @objc deinit
+}
+public class EdgeDetectionSKSeg : EkycID.EdgeDetectionAdapter {
+  public init() throws
+  public func detect(image: CoreGraphics.CGImage) -> EkycID.EdgeDetectionResult?
+  @objc deinit
+}
+public enum EkycIDLanguage : Swift.String {
+  case KH
+  case EN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FaceBlockageDetection {
+  public func detect(image: CoreGraphics.CGImage) -> Swift.Bool
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.FaceBlockageDetectionModelType) -> EkycID.FaceBlockageDetection.Builder
+    public func build() throws -> EkycID.FaceBlockageDetection
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol FaceBlockageDetectionAdapter {
+  func detect(image: CoreGraphics.CGImage) -> Swift.Bool
+}
+public class FaceBlockageDectionMobiletNetV2 : EkycID.FaceBlockageDetectionAdapter {
+  public func detect(image: CoreGraphics.CGImage) -> Swift.Bool
+  public init() throws
+  public func convertImage(rgbaData: [Swift.UInt8], size: CoreFoundation.CGSize) throws -> UIKit.UIImage
+  public func imageToInputData(image: CoreGraphics.CGImage) throws -> Foundation.Data
+  @objc deinit
+}
+public enum FaceBlockageDetectionModelType : Swift.String {
+  case MobileNetV2
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class FaceDetection {
+  public func detect(image: MLKitVision.VisionImage) -> [EkycID.FaceDetectionResult]?
+  public func detect(image: UIKit.UIImage) -> [EkycID.FaceDetectionResult]?
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.FaceDetectionModelType) -> EkycID.FaceDetection.Builder
+    public func setFaceSize(faceSize: Swift.Float) -> EkycID.FaceDetection.Builder
+    public func build() -> EkycID.FaceDetection
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol FaceDetectionAdapter {
+  func detect(image: MLKitVision.VisionImage) -> [EkycID.FaceDetectionResult]?
+  func detect(image: UIKit.UIImage) -> [EkycID.FaceDetectionResult]?
+}
+public class FaceDetectionGoogle : EkycID.FaceDetectionAdapter {
+  public init(detector: MLKitFaceDetection.FaceDetector)
+  public func detect(image: MLKitVision.VisionImage) -> [EkycID.FaceDetectionResult]?
+  public func detect(image: UIKit.UIImage) -> [EkycID.FaceDetectionResult]?
+  public func process(image: MLKitVision.VisionImage) throws -> [EkycID.FaceDetectionResult]
+  @objc deinit
+}
+public enum FaceDetectionModelType : Swift.String {
+  case OPENCV
+  case GOOGLE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FaceDetectionHeadDirection : Swift.String {
+  case FRONT
+  case LEFT
+  case RIGHT
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FaceDetectionEyesStatus : Swift.String {
+  case OPEN
+  case CLOSED
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class FaceDetectionResult {
+  public var bbox: EkycID.BoundingBox
+  public var leftEyeOpenProbability: Swift.Float?
+  public var rightEyeOpenProbability: Swift.Float?
+  public var headEulerAngleX: Swift.Float?
+  public var headEulerAngleY: Swift.Float?
+  public var headEulerAngleZ: Swift.Float?
+  public var headDirection: EkycID.FaceDetectionHeadDirection?
+  public var eyesStatus: EkycID.FaceDetectionEyesStatus?
+  public init(bbox: EkycID.BoundingBox, leftEyeOpenProbability: Swift.Float? = nil, rightEyeOpenProbability: Swift.Float? = nil, headEulerAngleX: Swift.Float? = nil, headEulerAngleY: Swift.Float? = nil, headEulerAngleZ: Swift.Float? = nil)
+  public func toString()
+  @objc deinit
+}
+public enum FrameStatus : Swift.String {
+  case INITIALIZING
+  case PREPARING
+  case PROCESSING
+  case DOCUMENT_NOT_FOUND
+  case DOCUMENT_FOUND
+  case DOCUMENT_TOO_BIG
+  case DOCUMENT_TOO_SMALL
+  case DOCUMENT_NOT_IN_CENTER
+  case DOCUMENT_BLUR
+  case CANNOT_GRAB_DOCUMENT
+  case NO_FACE_FOUND
+  case FACE_FOUND
+  case FACE_TOO_BIG
+  case FACE_TOO_SMALL
+  case FACE_BLOCKAGE_FOUND
+  case FACE_NOT_IN_CENTER
+  case MULTIPLE_FACES_FOUND
+  case CANNOT_GRAB_FACE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class HologramDetection {
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.HologramDetectionOptions) -> EkycID.HologramDetection.Builder
+    public func setThreshold(threshold: Swift.Float) -> EkycID.HologramDetection.Builder
+    public func build() throws -> EkycID.HologramDetection
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol HologramDetectionAdapter {
+  func detect(image: UIKit.UIImage) -> Swift.Bool
+}
+public class HologramDetectionHSV : EkycID.HologramDetectionAdapter {
+  public init(threshold: Swift.Float)
+  public func detect(image: UIKit.UIImage) -> Swift.Bool
+  public func process(image: UIKit.UIImage) -> Swift.Bool
+  @objc deinit
+}
+public enum HologramDetectionOptions : Swift.String {
+  case HSV
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ImageUtils {
+  public static func cropBoundingBox(image: CoreGraphics.CGImage, bbox: EkycID.BoundingBox, scale: Swift.Float = 2.0) -> CoreGraphics.CGImage
+}
+public protocol LivenessDetectionCameraEventListener {
+  func onFocus()
+  func onInitialize()
+  func onFocusDropped()
+  func onFrame(_ frameStatus: EkycID.FrameStatus)
+  func onCountDownChanged(current: Swift.Int, max: Swift.Int)
+  func onActivePromptChanged(_ activePrompt: EkycID.LivenessPromptType?)
+  func onAllPromptsCompleted(_ detection: EkycID.LivenessDetectionResult)
+  func onPromptCompleted(completedPromptIndex: Swift.Int, success: Swift.Bool, progress: Swift.Float)
+}
+public enum LivenessPromptType : Swift.String {
+  case BLINKING
+  case LOOK_LEFT
+  case LOOK_RIGHT
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class LivenessPrompt {
+  public var prompt: EkycID.LivenessPromptType
+  public var success: Swift.Bool?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LivenessFace {
+  public var image: UIKit.UIImage?
+  public var leftEyeOpenProbability: Swift.Float?
+  public var rightEyeOpenProbability: Swift.Float?
+  public var headEulerAngleX: Swift.Float?
+  public var headEulerAngleY: Swift.Float?
+  public var headEulerAngleZ: Swift.Float?
+  public var headDirection: EkycID.FaceDetectionHeadDirection?
+  public var eyesStatus: EkycID.FaceDetectionEyesStatus?
+  @objc deinit
+}
+public class LivenessDetectionCameraOptions {
+  public var prompts: [EkycID.LivenessPromptType]
+  public var promptTimerCountDownSec: Swift.Int
+  public init(prompts: [EkycID.LivenessPromptType] = [.LOOK_LEFT, .LOOK_RIGHT, .BLINKING], promptTimerCountDownSec: Swift.Int = 5)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessDetectionCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.LivenessDetectionCameraEventListener)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.LivenessDetectionCameraOptions? = nil)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) public func reset()
+  @_Concurrency.MainActor(unsafe) @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc deinit
+}
+public protocol LivenessDetectionEventListener {
+  func onFocusChanged(_ isFocusing: Swift.Bool)
+  func onProgressChanged(_ progress: Swift.Float)
+  func onCountDownChanged(current: Swift.Int, max: Swift.Int)
+  func onFrameStatusChanged(_ frameStatus: EkycID.FrameStatus)
+  func onActivePromptChanged(_ activePrompt: EkycID.LivenessPromptType?)
+  func onLivenessTestCompleted(_ result: EkycID.LivenessDetectionResult)
+}
+public class LivenessDetectionOptions {
+  public var cameraOptions: EkycID.LivenessDetectionCameraOptions
+  public init(cameraOptions: EkycID.LivenessDetectionCameraOptions = LivenessDetectionCameraOptions())
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LivenessDetectionResult {
+  public var frontFace: EkycID.LivenessFace?
+  public var leftFace: EkycID.LivenessFace?
+  public var rightFace: EkycID.LivenessFace?
+  public var prompts: [EkycID.LivenessPrompt]
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessDetectionView : UIKit.UIView, EkycID.LivenessDetectionCameraEventListener {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func onInitialize()
+  @_Concurrency.MainActor(unsafe) public func reset()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.LivenessDetectionOptions? = nil)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.LivenessDetectionEventListener)
+  @_Concurrency.MainActor(unsafe) public func onFrame(_ f: EkycID.FrameStatus)
+  @_Concurrency.MainActor(unsafe) public func onPromptCompleted(completedPromptIndex: Swift.Int, success: Swift.Bool, progress: Swift.Float)
+  @_Concurrency.MainActor(unsafe) public func onAllPromptsCompleted(_ detection: EkycID.LivenessDetectionResult)
+  @_Concurrency.MainActor(unsafe) public func onFocus()
+  @_Concurrency.MainActor(unsafe) public func onFocusDropped()
+  @_Concurrency.MainActor(unsafe) public func onCountDownChanged(current: Swift.Int, max: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func onActivePromptChanged(_ activePrompt: EkycID.LivenessPromptType?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ObjectDetection {
+  public func detect(image: CoreGraphics.CGImage) -> [EkycID.ObjectDetectionResult]?
+  public func setWhiteList(whiteList: [EkycID.ObjectDetectionObjectType])
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.ObjectDetectionModelType) -> EkycID.ObjectDetection.Builder
+    public func build() throws -> EkycID.ObjectDetection
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol ObjectDetectionAdapter {
+  func detect(image: CoreGraphics.CGImage) -> [EkycID.ObjectDetectionResult]?
+  func setWhiteList(whiteList: [EkycID.ObjectDetectionObjectType])
+}
+public enum ObjectDetectionModelType : Swift.String {
+  case MOBILENET_SSD
+  case YOLO
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ObjectDetectionObjectType : Swift.String {
+  case COVID_19_VACCINATION_CARD_0
+  case COVID_19_VACCINATION_CARD_0_BACK
+  case COVID_19_VACCINATION_CARD_1
+  case COVID_19_VACCINATION_CARD_1_BACK
+  case DRIVER_LICENSE_0
+  case DRIVER_LICENSE_0_BACK
+  case DRIVER_LICENSE_1
+  case DRIVER_LICENSE_1_BACK
+  case LICENSE_PLATE_0_0
+  case LICENSE_PLATE_0_1
+  case LICENSE_PLATE_1_0
+  case LICENSE_PLATE_2_0
+  case LICENSE_PLATE_3_0
+  case LICENSE_PLATE_3_1
+  case NATIONAL_ID_0
+  case NATIONAL_ID_0_BACK
+  case NATIONAL_ID_1
+  case NATIONAL_ID_1_BACK
+  case NATIONAL_ID_2
+  case NATIONAL_ID_2_BACK
+  case PASSPORT_0
+  case PASSPORT_0_TOP
+  case SUPERFIT_0
+  case SUPERFIT_0_BACK
+  case VEHICLE_REGISTRATION_0
+  case VEHICLE_REGISTRATION_0_BACK
+  case VEHICLE_REGISTRATION_1
+  case VEHICLE_REGISTRATION_1_BACK
+  case VEHICLE_REGISTRATION_2
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ObjectDetectionObjectGroup : Swift.String {
+  case COVID_19_VACCINATION_CARD
+  case DRIVER_LICENSE
+  case DRIVER_LICENSE_FRONT
+  case DRIVER_LICENSE_BACK
+  case LICENSE_PLATE
+  case NATIONAL_ID
+  case NATIONAL_ID_FRONT
+  case NATIONAL_ID_BACK
+  case VEHICLE_REGISTRATION
+  case VEHICLE_REGISTRATION_FRONT
+  case VEHICLE_REGISTRATION_BACK
+  case PASSPORT
+  case PASSPORT_TOP
+  case PASSPORT_BOTTOM
+  case OTHERS
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public let ObjectDetectionObjectTypeToObjectGroupMapping: [Swift.String : EkycID.ObjectDetectionObjectGroup]
+public let ObjectDetectionObjectGroupToObjectTypesMapping: [Swift.String : [EkycID.ObjectDetectionObjectType]]
+public let DOCUMENTS_WITH_FACE: [EkycID.ObjectDetectionObjectType]
+public let DOCUMENTS_WITH_SECONDARY_SIDE: [EkycID.ObjectDetectionObjectType]
+@_hasMissingDesignatedInitializers public class ObjectDetectionResult {
+  public var objectType: EkycID.ObjectDetectionObjectType
+  public var score: Swift.Float
+  public var bbox: EkycID.BoundingBox
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ObjectDetectionUtils {
+  @objc deinit
+}
+public struct Point {
+  public var x: Swift.Float
+  public var y: Swift.Float
+  public init(x: Swift.Float, y: Swift.Float)
+}
+extension EkycID.BlackWhiteDetectionOptions : Swift.Equatable {}
+extension EkycID.BlackWhiteDetectionOptions : Swift.Hashable {}
+extension EkycID.BlackWhiteDetectionOptions : Swift.RawRepresentable {}
+extension EkycID.BlurDetectionOptions : Swift.Equatable {}
+extension EkycID.BlurDetectionOptions : Swift.Hashable {}
+extension EkycID.BlurDetectionOptions : Swift.RawRepresentable {}
+extension EkycID.DocumentSide : Swift.Equatable {}
+extension EkycID.DocumentSide : Swift.Hashable {}
+extension EkycID.DocumentSide : Swift.RawRepresentable {}
+extension EkycID.EdgeDetectionModelType : Swift.Equatable {}
+extension EkycID.EdgeDetectionModelType : Swift.Hashable {}
+extension EkycID.EdgeDetectionModelType : Swift.RawRepresentable {}
+extension EkycID.EkycIDLanguage : Swift.Equatable {}
+extension EkycID.EkycIDLanguage : Swift.Hashable {}
+extension EkycID.EkycIDLanguage : Swift.RawRepresentable {}
+extension EkycID.FaceBlockageDetectionModelType : Swift.Equatable {}
+extension EkycID.FaceBlockageDetectionModelType : Swift.Hashable {}
+extension EkycID.FaceBlockageDetectionModelType : Swift.RawRepresentable {}
+extension EkycID.FaceDetectionModelType : Swift.Equatable {}
+extension EkycID.FaceDetectionModelType : Swift.Hashable {}
+extension EkycID.FaceDetectionModelType : Swift.RawRepresentable {}
+extension EkycID.FaceDetectionHeadDirection : Swift.Equatable {}
+extension EkycID.FaceDetectionHeadDirection : Swift.Hashable {}
+extension EkycID.FaceDetectionHeadDirection : Swift.RawRepresentable {}
+extension EkycID.FaceDetectionEyesStatus : Swift.Equatable {}
+extension EkycID.FaceDetectionEyesStatus : Swift.Hashable {}
+extension EkycID.FaceDetectionEyesStatus : Swift.RawRepresentable {}
+extension EkycID.FrameStatus : Swift.Equatable {}
+extension EkycID.FrameStatus : Swift.Hashable {}
+extension EkycID.FrameStatus : Swift.RawRepresentable {}
+extension EkycID.HologramDetectionOptions : Swift.Equatable {}
+extension EkycID.HologramDetectionOptions : Swift.Hashable {}
+extension EkycID.HologramDetectionOptions : Swift.RawRepresentable {}
+extension EkycID.LivenessPromptType : Swift.Equatable {}
+extension EkycID.LivenessPromptType : Swift.Hashable {}
+extension EkycID.LivenessPromptType : Swift.RawRepresentable {}
+extension EkycID.ObjectDetectionModelType : Swift.Equatable {}
+extension EkycID.ObjectDetectionModelType : Swift.Hashable {}
+extension EkycID.ObjectDetectionModelType : Swift.RawRepresentable {}
+extension EkycID.ObjectDetectionObjectType : Swift.Equatable {}
+extension EkycID.ObjectDetectionObjectType : Swift.Hashable {}
+extension EkycID.ObjectDetectionObjectType : Swift.RawRepresentable {}
+extension EkycID.ObjectDetectionObjectGroup : Swift.Equatable {}
+extension EkycID.ObjectDetectionObjectGroup : Swift.Hashable {}
+extension EkycID.ObjectDetectionObjectGroup : Swift.RawRepresentable {}
