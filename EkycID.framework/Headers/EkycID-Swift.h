@@ -301,6 +301,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
 @class NSCoder;
 @class AVCaptureOutput;
 @class AVCaptureConnection;
@@ -315,6 +316,21 @@ SWIFT_CLASS("_TtC6EkycID25DocumentScannerCameraView")
 
 SWIFT_CLASS("_TtC6EkycID19DocumentScannerView")
 @interface DocumentScannerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC6EkycID21FaceScannerCameraView")
+@interface FaceScannerCameraView : UIView <AVCaptureVideoDataOutputSampleBufferDelegate>
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
+@end
+
+
+SWIFT_CLASS("_TtC6EkycID15FaceScannerView")
+@interface FaceScannerView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 @end

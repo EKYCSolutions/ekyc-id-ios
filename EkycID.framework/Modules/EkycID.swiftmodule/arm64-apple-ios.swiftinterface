@@ -48,6 +48,19 @@ public enum BlackWhiteDetectionOptions : Swift.String {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FaceScannerView : UIKit.UIView, EkycID.FaceScannerCameraEventListener {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, useFrontCamera: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.FaceScannerOptions? = nil)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.FaceScannerEventListener)
+  @_Concurrency.MainActor(unsafe) public func onInitialized()
+  @_Concurrency.MainActor(unsafe) public func onDetection(_ detection: EkycID.LivenessFace)
+  @_Concurrency.MainActor(unsafe) public func onFrame(_ frameStatus: EkycID.FrameStatus)
+  @_Concurrency.MainActor(unsafe) public func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class BlurDetection {
   public class Builder {
     public init()
@@ -90,13 +103,27 @@ public class BoundingBox {
   @objc deinit
 }
 public protocol DocumentScannerCameraEventListener {
-  func onInitialize()
+  func onInitialized()
   func onDetection(_ detection: EkycID.DocumentScannerResult)
   func onFrame(_ frameStatus: EkycID.FrameStatus)
+  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
 }
 public class DocumentScannerCameraOptions {
-  public var preparingDuration: Swift.Int
-  public init(preparingDuration: Swift.Int = 3)
+  public var captureDurationCountDown: Swift.Int
+  public var faceCropScale: Swift.Float
+  public var roiSize: Swift.Float
+  public var minDocWidthPercentage: Swift.Float
+  public var maxDocWidthPercentage: Swift.Float
+  public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 100, minDocWidthPercentage: Swift.Float = 0.7, maxDocWidthPercentage: Swift.Float = 1)
+  @objc deinit
+}
+public class FaceScannerCameraOptions {
+  public var captureDurationCountDown: Swift.Int
+  public var faceCropScale: Swift.Float
+  public var roiSize: Swift.Float
+  public var minFaceWidthPercentage: Swift.Float
+  public var maxFaceWidthPercentage: Swift.Float
+  public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 250, minFaceWidthPercentage: Swift.Float = 0.5, maxFaceWidthPercentage: Swift.Float = 1)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
@@ -110,9 +137,11 @@ public class DocumentScannerCameraOptions {
   @objc deinit
 }
 public protocol DocumentScannerEventListener {
+  func onInitialized()
   func onDocumentScanned(mainSide: EkycID.DocumentScannerResult, secondarySide: EkycID.DocumentScannerResult?)
   func onFrameStatusChanged(_ frameStatus: EkycID.FrameStatus)
   func onCurrentSideChanged(_ currentSide: EkycID.DocumentSide)
+  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
 }
 public class DocumentScannerOptions {
   public var cameraOptions: EkycID.DocumentScannerCameraOptions
@@ -135,22 +164,29 @@ public enum DocumentSide : Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class DocumentScannerResult {
+public class DocumentScannerResult {
   public var documentType: EkycID.ObjectDetectionObjectType
   public var documentGroup: EkycID.ObjectDetectionObjectGroup
   public var fullImage: UIKit.UIImage
   public var documentImage: UIKit.UIImage
   public var faceImage: UIKit.UIImage?
+  public init(documentType: EkycID.ObjectDetectionObjectType, documentGroup: EkycID.ObjectDetectionObjectGroup, fullImage: UIKit.UIImage, documentImage: UIKit.UIImage, faceImage: UIKit.UIImage?)
   @objc deinit
+}
+extension AVFoundation.AVCaptureDevice {
+  public func centerFocus()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerView : UIKit.UIView, EkycID.DocumentScannerCameraEventListener {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) public func start(options: EkycID.DocumentScannerOptions? = nil)
   @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) public func reset()
   @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.DocumentScannerEventListener)
-  @_Concurrency.MainActor(unsafe) public func onInitialize()
+  @_Concurrency.MainActor(unsafe) public func onInitialized()
   @_Concurrency.MainActor(unsafe) public func onDetection(_ detection: EkycID.DocumentScannerResult)
   @_Concurrency.MainActor(unsafe) public func onFrame(_ frameStatus: EkycID.FrameStatus)
+  @_Concurrency.MainActor(unsafe) public func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class EdgeDetection {
@@ -187,6 +223,16 @@ public class EdgeDetectionResult {
 public class EdgeDetectionSKSeg : EkycID.EdgeDetectionAdapter {
   public init() throws
   public func detect(image: CoreGraphics.CGImage) -> EkycID.EdgeDetectionResult?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FaceScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.FaceScannerCameraEventListener)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, useFrontCamera: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.FaceScannerCameraOptions?)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
   @objc deinit
 }
 public enum EkycIDLanguage : Swift.String {
@@ -290,6 +336,11 @@ public class FaceDetectionResult {
   public func toString()
   @objc deinit
 }
+public class FaceScannerOptions {
+  public var cameraOptions: EkycID.FaceScannerCameraOptions
+  public init(cameraOptions: EkycID.FaceScannerCameraOptions = FaceScannerCameraOptions())
+  @objc deinit
+}
 public enum FrameStatus : Swift.String {
   case INITIALIZING
   case PREPARING
@@ -328,11 +379,23 @@ public enum FrameStatus : Swift.String {
 public protocol HologramDetectionAdapter {
   func detect(image: UIKit.UIImage) -> Swift.Bool
 }
+public protocol FaceScannerEventListener {
+  func onInitialized()
+  func onFaceScanned(_ face: EkycID.LivenessFace)
+  func onFrameStatusChanged(_ frameStatus: EkycID.FrameStatus)
+  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
+}
 public class HologramDetectionHSV : EkycID.HologramDetectionAdapter {
   public init(threshold: Swift.Float)
   public func detect(image: UIKit.UIImage) -> Swift.Bool
   public func process(image: UIKit.UIImage) -> Swift.Bool
   @objc deinit
+}
+public protocol FaceScannerCameraEventListener {
+  func onInitialized()
+  func onDetection(_ detection: EkycID.LivenessFace)
+  func onFrame(_ frameStatus: EkycID.FrameStatus)
+  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
 }
 public enum HologramDetectionOptions : Swift.String {
   case HSV
@@ -342,12 +405,19 @@ public enum HologramDetectionOptions : Swift.String {
     get
   }
 }
+extension UIKit.UIImage.Orientation {
+  public func getDegree() -> Swift.Double
+  public func isMirror() -> Swift.Bool
+}
+extension CoreGraphics.CGImage {
+  public func rotate(orienation: UIKit.UIImage.Orientation) -> CoreGraphics.CGImage?
+}
 public enum ImageUtils {
   public static func cropBoundingBox(image: CoreGraphics.CGImage, bbox: EkycID.BoundingBox, scale: Swift.Float = 2.0) -> CoreGraphics.CGImage
 }
 public protocol LivenessDetectionCameraEventListener {
   func onFocus()
-  func onInitialize()
+  func onInitialized()
   func onFocusDropped()
   func onFrame(_ frameStatus: EkycID.FrameStatus)
   func onCountDownChanged(current: Swift.Int, max: Swift.Int)
@@ -370,7 +440,7 @@ public enum LivenessPromptType : Swift.String {
   public var success: Swift.Bool?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class LivenessFace {
+public class LivenessFace {
   public var image: UIKit.UIImage?
   public var leftEyeOpenProbability: Swift.Float?
   public var rightEyeOpenProbability: Swift.Float?
@@ -379,6 +449,7 @@ public enum LivenessPromptType : Swift.String {
   public var headEulerAngleZ: Swift.Float?
   public var headDirection: EkycID.FaceDetectionHeadDirection?
   public var eyesStatus: EkycID.FaceDetectionEyesStatus?
+  public init(image: UIKit.UIImage?, leftEyeOpenProbability: Swift.Float?, rightEyeOpenProbability: Swift.Float?, headEulerAngleX: Swift.Float?, headEulerAngleY: Swift.Float?, headEulerAngleZ: Swift.Float?, headDirection: EkycID.FaceDetectionHeadDirection?, eyesStatus: EkycID.FaceDetectionEyesStatus?)
   @objc deinit
 }
 public class LivenessDetectionCameraOptions {
@@ -398,6 +469,7 @@ public class LivenessDetectionCameraOptions {
   @objc deinit
 }
 public protocol LivenessDetectionEventListener {
+  func onInitialized()
   func onFocusChanged(_ isFocusing: Swift.Bool)
   func onProgressChanged(_ progress: Swift.Float)
   func onCountDownChanged(current: Swift.Int, max: Swift.Int)
@@ -419,7 +491,7 @@ public class LivenessDetectionOptions {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessDetectionView : UIKit.UIView, EkycID.LivenessDetectionCameraEventListener {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func onInitialize()
+  @_Concurrency.MainActor(unsafe) public func onInitialized()
   @_Concurrency.MainActor(unsafe) public func reset()
   @_Concurrency.MainActor(unsafe) public func nextImage()
   @_Concurrency.MainActor(unsafe) public func start(options: EkycID.LivenessDetectionOptions? = nil)
@@ -516,6 +588,7 @@ public enum ObjectDetectionObjectGroup : Swift.String {
     get
   }
 }
+public let StringToObjectDetectionObjectTypeMapping: [Swift.String : EkycID.ObjectDetectionObjectType]
 public let ObjectDetectionObjectTypeToObjectGroupMapping: [Swift.String : EkycID.ObjectDetectionObjectGroup]
 public let ObjectDetectionObjectGroupToObjectTypesMapping: [Swift.String : [EkycID.ObjectDetectionObjectType]]
 public let DOCUMENTS_WITH_FACE: [EkycID.ObjectDetectionObjectType]
