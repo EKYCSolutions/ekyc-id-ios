@@ -18739,13 +18739,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1890,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/FaceBlockageDetection\/FaceBlockageDetectionMobileNetV2.swift",
       "kind": "IntegerLiteral",
       "offset": 424,
