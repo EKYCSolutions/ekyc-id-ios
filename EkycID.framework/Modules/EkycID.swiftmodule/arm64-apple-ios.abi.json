@@ -18529,7 +18529,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/FaceScannerView.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/FaceScannerView.swift",
       "kind": "BooleanLiteral",
       "offset": 826,
       "length": 5,
@@ -18585,35 +18585,35 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
       "kind": "FloatLiteral",
       "offset": 450,
       "length": 3,
       "value": "1.4"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 480,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
       "kind": "FloatLiteral",
       "offset": 525,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 1,
@@ -18697,42 +18697,42 @@
       "value": "361"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
       "kind": "StringLiteral",
       "offset": 776,
       "length": 37,
       "value": "\"com.ekycsolutions.facescanner.queue\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 954,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 1002,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 1099,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 1647,
       "length": 5,
