@@ -558,407 +558,6 @@
       },
       {
         "kind": "Import",
-        "name": "AudioToolbox",
-        "printedName": "AudioToolbox",
-        "declKind": "Import",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "EkycID"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EkycID"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FaceScannerView",
-        "printedName": "FaceScannerView",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(frame:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceScannerView",
-                "printedName": "EkycID.FaceScannerView",
-                "usr": "c:@M@EkycID@objc(cs)FaceScannerView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@EkycID@objc(cs)FaceScannerView(im)initWithFrame:",
-            "mangledName": "$s6EkycID15FaceScannerViewC5frameACSo6CGRectV_tcfc",
-            "moduleName": "EkycID",
-            "overriding": true,
-            "objc_name": "initWithFrame:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(frame:useFrontCamera:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceScannerView",
-                "printedName": "EkycID.FaceScannerView",
-                "usr": "c:@M@EkycID@objc(cs)FaceScannerView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:6EkycID15FaceScannerViewC5frame14useFrontCameraACSo6CGRectV_Sbtcfc",
-            "mangledName": "$s6EkycID15FaceScannerViewC5frame14useFrontCameraACSo6CGRectV_Sbtcfc",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start(options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "EkycID.FaceScannerOptions?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceScannerOptions",
-                    "printedName": "EkycID.FaceScannerOptions",
-                    "usr": "s:6EkycID18FaceScannerOptionsC"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC5start7optionsyAA0cD7OptionsCSg_tF",
-            "mangledName": "$s6EkycID15FaceScannerViewC5start7optionsyAA0cD7OptionsCSg_tF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC4stopyyF",
-            "mangledName": "$s6EkycID15FaceScannerViewC4stopyyF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "nextImage",
-            "printedName": "nextImage()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC9nextImageyyF",
-            "mangledName": "$s6EkycID15FaceScannerViewC9nextImageyyF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addListener",
-            "printedName": "addListener(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceScannerEventListener",
-                "printedName": "any EkycID.FaceScannerEventListener",
-                "usr": "s:6EkycID24FaceScannerEventListenerP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC11addListeneryyAA0cd5EventG0_pF",
-            "mangledName": "$s6EkycID15FaceScannerViewC11addListeneryyAA0cd5EventG0_pF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onInitialized",
-            "printedName": "onInitialized()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC13onInitializedyyF",
-            "mangledName": "$s6EkycID15FaceScannerViewC13onInitializedyyF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onDetection",
-            "printedName": "onDetection(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFace",
-                "printedName": "EkycID.LivenessFace",
-                "usr": "s:6EkycID12LivenessFaceC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC11onDetectionyyAA08LivenessC0CF",
-            "mangledName": "$s6EkycID15FaceScannerViewC11onDetectionyyAA08LivenessC0CF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onFrame",
-            "printedName": "onFrame(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FrameStatus",
-                "printedName": "EkycID.FrameStatus",
-                "usr": "s:6EkycID11FrameStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC7onFrameyyAA0G6StatusOF",
-            "mangledName": "$s6EkycID15FaceScannerViewC7onFrameyyAA0G6StatusOF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onCaptureCountDownChanged",
-            "printedName": "onCaptureCountDownChanged(current:max:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID15FaceScannerViewC25onCaptureCountDownChanged7current3maxySi_SitF",
-            "mangledName": "$s6EkycID15FaceScannerViewC25onCaptureCountDownChanged7current3maxySi_SitF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@EkycID@objc(cs)FaceScannerView",
-        "mangledName": "$s6EkycID15FaceScannerViewC",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UIView",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "FaceScannerCameraEventListener",
-            "printedName": "FaceScannerCameraEventListener",
-            "usr": "s:6EkycID30FaceScannerCameraEventListenerP",
-            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2033,6 +1632,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "DocumentScannerCameraEventListener",
         "printedName": "DocumentScannerCameraEventListener",
@@ -2661,511 +2277,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FaceScannerCameraOptions",
-        "printedName": "FaceScannerCameraOptions",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "captureDurationCountDown",
-            "printedName": "captureDurationCountDown",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivp",
-            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivp",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivg",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivg",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivs",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivs",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivM",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivM",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "faceCropScale",
-            "printedName": "faceCropScale",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvp",
-            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvp",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvg",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvg",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvs",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvs",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvM",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvM",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "roiSize",
-            "printedName": "roiSize",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvp",
-            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvp",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvg",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvg",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvs",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvs",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvM",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvM",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "minFaceWidthPercentage",
-            "printedName": "minFaceWidthPercentage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvp",
-            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvp",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvg",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvg",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvs",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvs",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvM",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvM",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "maxFaceWidthPercentage",
-            "printedName": "maxFaceWidthPercentage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvp",
-            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvp",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvg",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvg",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvs",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvs",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvM",
-                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvM",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(captureDurationCountDown:faceCropScale:roiSize:minFaceWidthPercentage:maxFaceWidthPercentage:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceScannerCameraOptions",
-                "printedName": "EkycID.FaceScannerCameraOptions",
-                "usr": "s:6EkycID24FaceScannerCameraOptionsC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "hasDefaultArg": true,
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "hasDefaultArg": true,
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "hasDefaultArg": true,
-                "usr": "s:Sf"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Float",
-                "printedName": "Swift.Float",
-                "hasDefaultArg": true,
-                "usr": "s:Sf"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDown13faceCropScale7roiSize03minC15WidthPercentage03maxcqR0ACSi_S4ftcfc",
-            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDown13faceCropScale7roiSize03minC15WidthPercentage03maxcqR0ACSi_S4ftcfc",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:6EkycID24FaceScannerCameraOptionsC",
-        "mangledName": "$s6EkycID24FaceScannerCameraOptionsC",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -3206,7 +2317,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DocumentScannerCameraEventListener",
-                "printedName": "any EkycID.DocumentScannerCameraEventListener",
+                "printedName": "EkycID.DocumentScannerCameraEventListener",
                 "usr": "s:6EkycID34DocumentScannerCameraEventListenerP"
               }
             ],
@@ -3476,24 +2587,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -4916,23 +4013,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "EkycID"
-      },
-      {
-        "kind": "Import",
         "name": "AudioToolbox",
         "printedName": "AudioToolbox",
         "declKind": "Import",
@@ -5105,7 +4185,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DocumentScannerEventListener",
-                "printedName": "any EkycID.DocumentScannerEventListener",
+                "printedName": "EkycID.DocumentScannerEventListener",
                 "usr": "s:6EkycID28DocumentScannerEventListenerP"
               }
             ],
@@ -5301,13 +4381,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -6261,339 +5334,6 @@
             "printedName": "EdgeDetectionAdapter",
             "usr": "s:6EkycID20EdgeDetectionAdapterP",
             "mangledName": "$s6EkycID20EdgeDetectionAdapterP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EkycID"
-      },
-      {
-        "kind": "Import",
-        "name": "MLKitVision",
-        "printedName": "MLKitVision",
-        "declKind": "Import",
-        "moduleName": "EkycID"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FaceScannerCameraView",
-        "printedName": "FaceScannerCameraView",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "addListener",
-            "printedName": "addListener(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FaceScannerCameraEventListener",
-                "printedName": "any EkycID.FaceScannerCameraEventListener",
-                "usr": "s:6EkycID30FaceScannerCameraEventListenerP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID21FaceScannerCameraViewC11addListeneryyAA0cde5EventH0_pF",
-            "mangledName": "$s6EkycID21FaceScannerCameraViewC11addListeneryyAA0cde5EventH0_pF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(frame:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceScannerCameraView",
-                "printedName": "EkycID.FaceScannerCameraView",
-                "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView(im)initWithFrame:",
-            "mangledName": "$s6EkycID21FaceScannerCameraViewC5frameACSo6CGRectV_tcfc",
-            "moduleName": "EkycID",
-            "overriding": true,
-            "objc_name": "initWithFrame:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(frame:useFrontCamera:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FaceScannerCameraView",
-                "printedName": "EkycID.FaceScannerCameraView",
-                "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:6EkycID21FaceScannerCameraViewC5frame08useFrontE0ACSo6CGRectV_Sbtcfc",
-            "mangledName": "$s6EkycID21FaceScannerCameraViewC5frame08useFrontE0ACSo6CGRectV_Sbtcfc",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start(options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "EkycID.FaceScannerCameraOptions?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FaceScannerCameraOptions",
-                    "printedName": "EkycID.FaceScannerCameraOptions",
-                    "usr": "s:6EkycID24FaceScannerCameraOptionsC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID21FaceScannerCameraViewC5start7optionsyAA0cdE7OptionsCSg_tF",
-            "mangledName": "$s6EkycID21FaceScannerCameraViewC5start7optionsyAA0cdE7OptionsCSg_tF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID21FaceScannerCameraViewC4stopyyF",
-            "mangledName": "$s6EkycID21FaceScannerCameraViewC4stopyyF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "nextImage",
-            "printedName": "nextImage()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID21FaceScannerCameraViewC9nextImageyyF",
-            "mangledName": "$s6EkycID21FaceScannerCameraViewC9nextImageyyF",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "captureOutput",
-            "printedName": "captureOutput(_:didOutput:from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AVCaptureOutput",
-                "printedName": "AVFoundation.AVCaptureOutput",
-                "usr": "c:objc(cs)AVCaptureOutput"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMSampleBuffer",
-                "printedName": "CoreMedia.CMSampleBuffer",
-                "usr": "c:@T@CMSampleBufferRef"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AVCaptureConnection",
-                "printedName": "AVFoundation.AVCaptureConnection",
-                "usr": "c:objc(cs)AVCaptureConnection"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView(im)captureOutput:didOutputSampleBuffer:fromConnection:",
-            "mangledName": "$s6EkycID21FaceScannerCameraViewC13captureOutput_03didH04fromySo09AVCaptureH0C_So17CMSampleBufferRefaSo0K10ConnectionCtF",
-            "moduleName": "EkycID",
-            "objc_name": "captureOutput:didOutputSampleBuffer:fromConnection:",
-            "declAttributes": [
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView",
-        "mangledName": "$s6EkycID21FaceScannerCameraViewC",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UIView",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -9553,6 +8293,1091 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "FaceScannerCameraEventListener",
+        "printedName": "FaceScannerCameraEventListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onInitialized",
+            "printedName": "onInitialized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID30FaceScannerCameraEventListenerP13onInitializedyyF",
+            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP13onInitializedyyF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDetection",
+            "printedName": "onDetection(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessFace",
+                "printedName": "EkycID.LivenessFace",
+                "usr": "s:6EkycID12LivenessFaceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID30FaceScannerCameraEventListenerP11onDetectionyyAA08LivenessC0CF",
+            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP11onDetectionyyAA08LivenessC0CF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFrame",
+            "printedName": "onFrame(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FrameStatus",
+                "printedName": "EkycID.FrameStatus",
+                "usr": "s:6EkycID11FrameStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID30FaceScannerCameraEventListenerP7onFrameyyAA0I6StatusOF",
+            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP7onFrameyyAA0I6StatusOF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCaptureCountDownChanged",
+            "printedName": "onCaptureCountDownChanged(current:max:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID30FaceScannerCameraEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
+            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6EkycID30FaceScannerCameraEventListenerP",
+        "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceScannerCameraOptions",
+        "printedName": "FaceScannerCameraOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "captureDurationCountDown",
+            "printedName": "captureDurationCountDown",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivp",
+            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivg",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivs",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivM",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDownSivM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceCropScale",
+            "printedName": "faceCropScale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvp",
+            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvg",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvs",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvM",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC13faceCropScaleSfvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roiSize",
+            "printedName": "roiSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvp",
+            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvg",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvs",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC7roiSizeSfvM",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC7roiSizeSfvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minFaceWidthPercentage",
+            "printedName": "minFaceWidthPercentage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvp",
+            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvg",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvs",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvM",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03minC15WidthPercentageSfvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxFaceWidthPercentage",
+            "printedName": "maxFaceWidthPercentage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvp",
+            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvg",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvs",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvM",
+                "mangledName": "$s6EkycID24FaceScannerCameraOptionsC03maxC15WidthPercentageSfvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(captureDurationCountDown:faceCropScale:roiSize:minFaceWidthPercentage:maxFaceWidthPercentage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceScannerCameraOptions",
+                "printedName": "EkycID.FaceScannerCameraOptions",
+                "usr": "s:6EkycID24FaceScannerCameraOptionsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6EkycID24FaceScannerCameraOptionsC24captureDurationCountDown13faceCropScale7roiSize03minC15WidthPercentage03maxcqR0ACSi_S4ftcfc",
+            "mangledName": "$s6EkycID24FaceScannerCameraOptionsC24captureDurationCountDown13faceCropScale7roiSize03minC15WidthPercentage03maxcqR0ACSi_S4ftcfc",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6EkycID24FaceScannerCameraOptionsC",
+        "mangledName": "$s6EkycID24FaceScannerCameraOptionsC",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
+        "kind": "Import",
+        "name": "MLKitVision",
+        "printedName": "MLKitVision",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceScannerCameraView",
+        "printedName": "FaceScannerCameraView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "addListener",
+            "printedName": "addListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FaceScannerCameraEventListener",
+                "printedName": "EkycID.FaceScannerCameraEventListener",
+                "usr": "s:6EkycID30FaceScannerCameraEventListenerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID21FaceScannerCameraViewC11addListeneryyAA0cde5EventH0_pF",
+            "mangledName": "$s6EkycID21FaceScannerCameraViewC11addListeneryyAA0cde5EventH0_pF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceScannerCameraView",
+                "printedName": "EkycID.FaceScannerCameraView",
+                "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView(im)initWithFrame:",
+            "mangledName": "$s6EkycID21FaceScannerCameraViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "EkycID",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:useFrontCamera:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceScannerCameraView",
+                "printedName": "EkycID.FaceScannerCameraView",
+                "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6EkycID21FaceScannerCameraViewC5frame08useFrontE0ACSo6CGRectV_Sbtcfc",
+            "mangledName": "$s6EkycID21FaceScannerCameraViewC5frame08useFrontE0ACSo6CGRectV_Sbtcfc",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EkycID.FaceScannerCameraOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FaceScannerCameraOptions",
+                    "printedName": "EkycID.FaceScannerCameraOptions",
+                    "usr": "s:6EkycID24FaceScannerCameraOptionsC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID21FaceScannerCameraViewC5start7optionsyAA0cdE7OptionsCSg_tF",
+            "mangledName": "$s6EkycID21FaceScannerCameraViewC5start7optionsyAA0cdE7OptionsCSg_tF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID21FaceScannerCameraViewC4stopyyF",
+            "mangledName": "$s6EkycID21FaceScannerCameraViewC4stopyyF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nextImage",
+            "printedName": "nextImage()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID21FaceScannerCameraViewC9nextImageyyF",
+            "mangledName": "$s6EkycID21FaceScannerCameraViewC9nextImageyyF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(_:didOutput:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureOutput",
+                "printedName": "AVFoundation.AVCaptureOutput",
+                "usr": "c:objc(cs)AVCaptureOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView(im)captureOutput:didOutputSampleBuffer:fromConnection:",
+            "mangledName": "$s6EkycID21FaceScannerCameraViewC13captureOutput_03didH04fromySo09AVCaptureH0C_So17CMSampleBufferRefaSo0K10ConnectionCtF",
+            "moduleName": "EkycID",
+            "objc_name": "captureOutput:didOutputSampleBuffer:fromConnection:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@EkycID@objc(cs)FaceScannerCameraView",
+        "mangledName": "$s6EkycID21FaceScannerCameraViewC",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceScannerEventListener",
+        "printedName": "FaceScannerEventListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onInitialized",
+            "printedName": "onInitialized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID24FaceScannerEventListenerP13onInitializedyyF",
+            "mangledName": "$s6EkycID24FaceScannerEventListenerP13onInitializedyyF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFaceScanned",
+            "printedName": "onFaceScanned(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessFace",
+                "printedName": "EkycID.LivenessFace",
+                "usr": "s:6EkycID12LivenessFaceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID24FaceScannerEventListenerP02onC7ScannedyyAA08LivenessC0CF",
+            "mangledName": "$s6EkycID24FaceScannerEventListenerP02onC7ScannedyyAA08LivenessC0CF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFrameStatusChanged",
+            "printedName": "onFrameStatusChanged(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FrameStatus",
+                "printedName": "EkycID.FrameStatus",
+                "usr": "s:6EkycID11FrameStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID24FaceScannerEventListenerP20onFrameStatusChangedyyAA0hI0OF",
+            "mangledName": "$s6EkycID24FaceScannerEventListenerP20onFrameStatusChangedyyAA0hI0OF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCaptureCountDownChanged",
+            "printedName": "onCaptureCountDownChanged(current:max:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID24FaceScannerEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
+            "mangledName": "$s6EkycID24FaceScannerEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
+            "moduleName": "EkycID",
+            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
+            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6EkycID24FaceScannerEventListenerP",
+        "mangledName": "$s6EkycID24FaceScannerEventListenerP",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -9687,6 +9512,417 @@
         "moduleName": "EkycID",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AudioToolbox",
+        "printedName": "AudioToolbox",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FaceScannerView",
+        "printedName": "FaceScannerView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceScannerView",
+                "printedName": "EkycID.FaceScannerView",
+                "usr": "c:@M@EkycID@objc(cs)FaceScannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@EkycID@objc(cs)FaceScannerView(im)initWithFrame:",
+            "mangledName": "$s6EkycID15FaceScannerViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "EkycID",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:useFrontCamera:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceScannerView",
+                "printedName": "EkycID.FaceScannerView",
+                "usr": "c:@M@EkycID@objc(cs)FaceScannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6EkycID15FaceScannerViewC5frame14useFrontCameraACSo6CGRectV_Sbtcfc",
+            "mangledName": "$s6EkycID15FaceScannerViewC5frame14useFrontCameraACSo6CGRectV_Sbtcfc",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EkycID.FaceScannerOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FaceScannerOptions",
+                    "printedName": "EkycID.FaceScannerOptions",
+                    "usr": "s:6EkycID18FaceScannerOptionsC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC5start7optionsyAA0cD7OptionsCSg_tF",
+            "mangledName": "$s6EkycID15FaceScannerViewC5start7optionsyAA0cD7OptionsCSg_tF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC4stopyyF",
+            "mangledName": "$s6EkycID15FaceScannerViewC4stopyyF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nextImage",
+            "printedName": "nextImage()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC9nextImageyyF",
+            "mangledName": "$s6EkycID15FaceScannerViewC9nextImageyyF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addListener",
+            "printedName": "addListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FaceScannerEventListener",
+                "printedName": "EkycID.FaceScannerEventListener",
+                "usr": "s:6EkycID24FaceScannerEventListenerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC11addListeneryyAA0cd5EventG0_pF",
+            "mangledName": "$s6EkycID15FaceScannerViewC11addListeneryyAA0cd5EventG0_pF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInitialized",
+            "printedName": "onInitialized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC13onInitializedyyF",
+            "mangledName": "$s6EkycID15FaceScannerViewC13onInitializedyyF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDetection",
+            "printedName": "onDetection(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessFace",
+                "printedName": "EkycID.LivenessFace",
+                "usr": "s:6EkycID12LivenessFaceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC11onDetectionyyAA08LivenessC0CF",
+            "mangledName": "$s6EkycID15FaceScannerViewC11onDetectionyyAA08LivenessC0CF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFrame",
+            "printedName": "onFrame(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FrameStatus",
+                "printedName": "EkycID.FrameStatus",
+                "usr": "s:6EkycID11FrameStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC7onFrameyyAA0G6StatusOF",
+            "mangledName": "$s6EkycID15FaceScannerViewC7onFrameyyAA0G6StatusOF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCaptureCountDownChanged",
+            "printedName": "onCaptureCountDownChanged(current:max:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID15FaceScannerViewC25onCaptureCountDownChanged7current3maxySi_SitF",
+            "mangledName": "$s6EkycID15FaceScannerViewC25onCaptureCountDownChanged7current3maxySi_SitF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@EkycID@objc(cs)FaceScannerView",
+        "mangledName": "$s6EkycID15FaceScannerViewC",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "FaceScannerCameraEventListener",
+            "printedName": "FaceScannerCameraEventListener",
+            "usr": "s:6EkycID30FaceScannerCameraEventListenerP",
+            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -10700,138 +10936,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "FaceScannerEventListener",
-        "printedName": "FaceScannerEventListener",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onInitialized",
-            "printedName": "onInitialized()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID24FaceScannerEventListenerP13onInitializedyyF",
-            "mangledName": "$s6EkycID24FaceScannerEventListenerP13onInitializedyyF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onFaceScanned",
-            "printedName": "onFaceScanned(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFace",
-                "printedName": "EkycID.LivenessFace",
-                "usr": "s:6EkycID12LivenessFaceC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID24FaceScannerEventListenerP02onC7ScannedyyAA08LivenessC0CF",
-            "mangledName": "$s6EkycID24FaceScannerEventListenerP02onC7ScannedyyAA08LivenessC0CF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onFrameStatusChanged",
-            "printedName": "onFrameStatusChanged(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FrameStatus",
-                "printedName": "EkycID.FrameStatus",
-                "usr": "s:6EkycID11FrameStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID24FaceScannerEventListenerP20onFrameStatusChangedyyAA0hI0OF",
-            "mangledName": "$s6EkycID24FaceScannerEventListenerP20onFrameStatusChangedyyAA0hI0OF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onCaptureCountDownChanged",
-            "printedName": "onCaptureCountDownChanged(current:max:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID24FaceScannerEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
-            "mangledName": "$s6EkycID24FaceScannerEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:6EkycID24FaceScannerEventListenerP",
-        "mangledName": "$s6EkycID24FaceScannerEventListenerP",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "HologramDetectionHSV",
         "printedName": "HologramDetectionHSV",
         "children": [
@@ -10932,138 +11036,6 @@
             "usr": "s:6EkycID24HologramDetectionAdapterP",
             "mangledName": "$s6EkycID24HologramDetectionAdapterP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FaceScannerCameraEventListener",
-        "printedName": "FaceScannerCameraEventListener",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onInitialized",
-            "printedName": "onInitialized()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID30FaceScannerCameraEventListenerP13onInitializedyyF",
-            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP13onInitializedyyF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onDetection",
-            "printedName": "onDetection(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFace",
-                "printedName": "EkycID.LivenessFace",
-                "usr": "s:6EkycID12LivenessFaceC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID30FaceScannerCameraEventListenerP11onDetectionyyAA08LivenessC0CF",
-            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP11onDetectionyyAA08LivenessC0CF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onFrame",
-            "printedName": "onFrame(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FrameStatus",
-                "printedName": "EkycID.FrameStatus",
-                "usr": "s:6EkycID11FrameStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID30FaceScannerCameraEventListenerP7onFrameyyAA0I6StatusOF",
-            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP7onFrameyyAA0I6StatusOF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onCaptureCountDownChanged",
-            "printedName": "onCaptureCountDownChanged(current:max:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6EkycID30FaceScannerCameraEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
-            "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP25onCaptureCountDownChanged7current3maxySi_SitF",
-            "moduleName": "EkycID",
-            "genericSig": "<τ_0_0 where τ_0_0 : EkycID.FaceScannerCameraEventListener>",
-            "sugared_genericSig": "<Self where Self : EkycID.FaceScannerCameraEventListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:6EkycID30FaceScannerCameraEventListenerP",
-        "mangledName": "$s6EkycID30FaceScannerCameraEventListenerP",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
@@ -13324,7 +13296,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LivenessDetectionCameraEventListener",
-                "printedName": "any EkycID.LivenessDetectionCameraEventListener",
+                "printedName": "EkycID.LivenessDetectionCameraEventListener",
                 "usr": "s:6EkycID36LivenessDetectionCameraEventListenerP"
               }
             ],
@@ -13578,13 +13550,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -14612,7 +14577,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LivenessDetectionEventListener",
-                "printedName": "any EkycID.LivenessDetectionEventListener",
+                "printedName": "EkycID.LivenessDetectionEventListener",
                 "usr": "s:6EkycID30LivenessDetectionEventListenerP"
               }
             ],
@@ -14903,13 +14868,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -18529,854 +18487,854 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/FaceScannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 826,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/BlurDetection\/BlurDetection.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/BlurDetection\/BlurDetection.swift",
       "kind": "IntegerLiteral",
       "offset": 433,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/BlurDetection\/BlurDetectionDWT.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/BlurDetection\/BlurDetectionDWT.swift",
       "kind": "FloatLiteral",
       "offset": 1010,
       "length": 5,
       "value": "0.001"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
       "kind": "FloatLiteral",
       "offset": 450,
       "length": 3,
       "value": "1.4"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 480,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
       "kind": "FloatLiteral",
       "offset": 524,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 568,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 416,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
-      "kind": "FloatLiteral",
-      "offset": 450,
-      "length": 3,
-      "value": "1.4"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 480,
-      "length": 3,
-      "value": "250"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
-      "kind": "FloatLiteral",
-      "offset": 525,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 570,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
       "kind": "StringLiteral",
       "offset": 762,
       "length": 41,
       "value": "\"com.ekycsolutions.documentscanner.queue\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 947,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 1138,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
       "kind": "IntegerLiteral",
       "offset": 1188,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentScannerOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentScannerOptions.swift",
       "kind": "Array",
       "offset": 417,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentScannerView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentScannerView.swift",
       "kind": "Array",
       "offset": 385,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentScannerView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentScannerView.swift",
       "kind": "Dictionary",
       "offset": 713,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 20,
       "value": "\"EdgeDetectionSKSeg\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
       "kind": "IntegerLiteral",
       "offset": 402,
       "length": 3,
       "value": "224"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
       "kind": "IntegerLiteral",
       "offset": 501,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
       "kind": "IntegerLiteral",
       "offset": 561,
       "length": 3,
       "value": "361"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
-      "kind": "StringLiteral",
-      "offset": 776,
-      "length": 37,
-      "value": "\"com.ekycsolutions.facescanner.queue\""
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 954,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1002,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1099,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1149,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1647,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/FaceBlockageDetection\/FaceBlockageDetectionMobileNetV2.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/FaceBlockageDetection\/FaceBlockageDetectionMobileNetV2.swift",
       "kind": "IntegerLiteral",
       "offset": 424,
       "length": 3,
       "value": "224"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/FaceDetection\/FaceDetection.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/FaceDetection\/FaceDetection.swift",
       "kind": "FloatLiteral",
       "offset": 674,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/ImageUtils.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 416,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "kind": "FloatLiteral",
+      "offset": 450,
+      "length": 3,
+      "value": "1.4"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 480,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "kind": "FloatLiteral",
+      "offset": 525,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 570,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "kind": "StringLiteral",
+      "offset": 776,
+      "length": 37,
+      "value": "\"com.ekycsolutions.facescanner.queue\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 954,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1002,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1099,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1149,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/CameraView\/FaceScannerCameraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1647,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/FaceScanner\/FaceScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 826,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/ImageUtils.swift",
       "kind": "FloatLiteral",
       "offset": 2450,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/ImageUtils.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/ImageUtils.swift",
       "kind": "FloatLiteral",
       "offset": 2916,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
       "kind": "IntegerLiteral",
       "offset": 1844,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 473,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "StringLiteral",
       "offset": 783,
       "length": 43,
       "value": "\"com.ekycsolutions.livenessdetection.queue\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 933,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 974,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "FloatLiteral",
       "offset": 1066,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "FloatLiteral",
       "offset": 1107,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "IntegerLiteral",
       "offset": 1152,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "IntegerLiteral",
       "offset": 1203,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "Array",
       "offset": 1250,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "IntegerLiteral",
       "offset": 1333,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "BooleanLiteral",
       "offset": 1375,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
       "kind": "Array",
       "offset": 317,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
       "kind": "IntegerLiteral",
       "offset": 443,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
       "kind": "IntegerLiteral",
       "offset": 477,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 1652,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 1742,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 1842,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 1932,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2032,
       "length": 18,
       "value": "\"DRIVER_LICENSE_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2100,
       "length": 23,
       "value": "\"DRIVER_LICENSE_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2178,
       "length": 18,
       "value": "\"DRIVER_LICENSE_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2246,
       "length": 23,
       "value": "\"DRIVER_LICENSE_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2324,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2394,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2464,
       "length": 19,
       "value": "\"LICENSE_PLATE_1_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2534,
       "length": 19,
       "value": "\"LICENSE_PLATE_2_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2604,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2674,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2744,
       "length": 15,
       "value": "\"NATIONAL_ID_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2806,
       "length": 20,
       "value": "\"NATIONAL_ID_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2878,
       "length": 15,
       "value": "\"NATIONAL_ID_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 2940,
       "length": 20,
       "value": "\"NATIONAL_ID_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3012,
       "length": 15,
       "value": "\"NATIONAL_ID_2\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3074,
       "length": 20,
       "value": "\"NATIONAL_ID_2_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3146,
       "length": 12,
       "value": "\"PASSPORT_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3202,
       "length": 16,
       "value": "\"PASSPORT_0_TOP\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3266,
       "length": 12,
       "value": "\"SUPERFIT_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3322,
       "length": 17,
       "value": "\"SUPERFIT_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3388,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3468,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3558,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3638,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3728,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_2\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3909,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3998,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4092,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4181,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4275,
       "length": 18,
       "value": "\"DRIVER_LICENSE_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4342,
       "length": 23,
       "value": "\"DRIVER_LICENSE_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4414,
       "length": 18,
       "value": "\"DRIVER_LICENSE_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4481,
       "length": 23,
       "value": "\"DRIVER_LICENSE_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4553,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4620,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4687,
       "length": 19,
       "value": "\"LICENSE_PLATE_1_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4754,
       "length": 19,
       "value": "\"LICENSE_PLATE_2_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4821,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4888,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 4955,
       "length": 15,
       "value": "\"NATIONAL_ID_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5016,
       "length": 20,
       "value": "\"NATIONAL_ID_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5082,
       "length": 15,
       "value": "\"NATIONAL_ID_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5143,
       "length": 20,
       "value": "\"NATIONAL_ID_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5209,
       "length": 15,
       "value": "\"NATIONAL_ID_2\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5270,
       "length": 20,
       "value": "\"NATIONAL_ID_2_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5336,
       "length": 12,
       "value": "\"PASSPORT_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5391,
       "length": 16,
       "value": "\"PASSPORT_0_TOP\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5450,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5529,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5613,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_1\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5692,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_1_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5776,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_2\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5855,
       "length": 12,
       "value": "\"SUPERFIT_0\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 5908,
       "length": 17,
       "value": "\"SUPERFIT_0_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 6069,
       "length": 16,
       "value": "\"DRIVER_LICENSE\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 6317,
       "length": 13,
       "value": "\"NATIONAL_ID\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 6653,
       "length": 15,
       "value": "\"LICENSE_PLATE\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 7000,
       "length": 22,
       "value": "\"VEHICLE_REGISTRATION\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 7336,
       "length": 10,
       "value": "\"PASSPORT\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 7456,
       "length": 27,
       "value": "\"COVID_19_VACCINATION_CARD\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 7759,
       "length": 8,
       "value": "\"OTHERS\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 7878,
       "length": 22,
       "value": "\"DRIVER_LICENSE_FRONT\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 8018,
       "length": 21,
       "value": "\"DRIVER_LICENSE_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 8167,
       "length": 19,
       "value": "\"NATIONAL_ID_FRONT\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 8347,
       "length": 18,
       "value": "\"NATIONAL_ID_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 8541,
       "length": 28,
       "value": "\"VEHICLE_REGISTRATION_FRONT\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 8757,
       "length": 27,
       "value": "\"VEHICLE_REGISTRATION_BACK\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 8924,
       "length": 17,
       "value": "\"PASSPORT_BOTTOM\""
     },
     {
-      "filePath": "\/Users\/socretlee\/CodingDrive\/ekyc\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 9001,
       "length": 14,

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 effective-4.1.50 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name EkycID
+// swift-compiler-version: Apple Swift version 5.7.2 effective-4.1.50 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name EkycID
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Accelerate
 import AudioToolbox
@@ -16,7 +17,6 @@ import TensorFlowLite
 import UIKit
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers @available(iOS 16.0, *)
 public class BlackWhiteDetection {
   public class Builder {
@@ -47,19 +47,6 @@ public enum BlackWhiteDetectionOptions : Swift.String {
   public var rawValue: Swift.String {
     get
   }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FaceScannerView : UIKit.UIView, EkycID.FaceScannerCameraEventListener {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, useFrontCamera: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.FaceScannerOptions? = nil)
-  @_Concurrency.MainActor(unsafe) public func stop()
-  @_Concurrency.MainActor(unsafe) public func nextImage()
-  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.FaceScannerEventListener)
-  @_Concurrency.MainActor(unsafe) public func onInitialized()
-  @_Concurrency.MainActor(unsafe) public func onDetection(_ detection: EkycID.LivenessFace)
-  @_Concurrency.MainActor(unsafe) public func onFrame(_ frameStatus: EkycID.FrameStatus)
-  @_Concurrency.MainActor(unsafe) public func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BlurDetection {
   public class Builder {
@@ -102,6 +89,9 @@ public class BoundingBox {
   public init(x: Swift.Float, y: Swift.Float, w: Swift.Float, h: Swift.Float)
   @objc deinit
 }
+extension AVFoundation.AVCaptureDevice {
+  public func centerFocus()
+}
 public protocol DocumentScannerCameraEventListener {
   func onInitialized()
   func onDetection(_ detection: EkycID.DocumentScannerResult)
@@ -117,17 +107,8 @@ public class DocumentScannerCameraOptions {
   public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 100, minDocWidthPercentage: Swift.Float = 0.7, maxDocWidthPercentage: Swift.Float = 1)
   @objc deinit
 }
-public class FaceScannerCameraOptions {
-  public var captureDurationCountDown: Swift.Int
-  public var faceCropScale: Swift.Float
-  public var roiSize: Swift.Float
-  public var minFaceWidthPercentage: Swift.Float
-  public var maxFaceWidthPercentage: Swift.Float
-  public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 250, minFaceWidthPercentage: Swift.Float = 0.5, maxFaceWidthPercentage: Swift.Float = 1)
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
-  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.DocumentScannerCameraEventListener)
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: EkycID.DocumentScannerCameraEventListener)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) public func start(options: EkycID.DocumentScannerCameraOptions?)
   @_Concurrency.MainActor(unsafe) public func stop()
@@ -173,16 +154,13 @@ public class DocumentScannerResult {
   public init(documentType: EkycID.ObjectDetectionObjectType, documentGroup: EkycID.ObjectDetectionObjectGroup, fullImage: UIKit.UIImage, documentImage: UIKit.UIImage, faceImage: UIKit.UIImage?)
   @objc deinit
 }
-extension AVFoundation.AVCaptureDevice {
-  public func centerFocus()
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerView : UIKit.UIView, EkycID.DocumentScannerCameraEventListener {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) public func start(options: EkycID.DocumentScannerOptions? = nil)
   @_Concurrency.MainActor(unsafe) public func stop()
   @_Concurrency.MainActor(unsafe) public func nextImage()
   @_Concurrency.MainActor(unsafe) public func reset()
-  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.DocumentScannerEventListener)
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: EkycID.DocumentScannerEventListener)
   @_Concurrency.MainActor(unsafe) public func onInitialized()
   @_Concurrency.MainActor(unsafe) public func onDetection(_ detection: EkycID.DocumentScannerResult)
   @_Concurrency.MainActor(unsafe) public func onFrame(_ frameStatus: EkycID.FrameStatus)
@@ -223,16 +201,6 @@ public class EdgeDetectionResult {
 public class EdgeDetectionSKSeg : EkycID.EdgeDetectionAdapter {
   public init() throws
   public func detect(image: CoreGraphics.CGImage) -> EkycID.EdgeDetectionResult?
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FaceScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
-  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.FaceScannerCameraEventListener)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, useFrontCamera: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.FaceScannerCameraOptions?)
-  @_Concurrency.MainActor(unsafe) public func stop()
-  @_Concurrency.MainActor(unsafe) public func nextImage()
-  @_Concurrency.MainActor(unsafe) @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
   @objc deinit
 }
 public enum EkycIDLanguage : Swift.String {
@@ -336,9 +304,53 @@ public class FaceDetectionResult {
   public func toString()
   @objc deinit
 }
+public protocol FaceScannerCameraEventListener {
+  func onInitialized()
+  func onDetection(_ detection: EkycID.LivenessFace)
+  func onFrame(_ frameStatus: EkycID.FrameStatus)
+  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
+}
+public class FaceScannerCameraOptions {
+  public var captureDurationCountDown: Swift.Int
+  public var faceCropScale: Swift.Float
+  public var roiSize: Swift.Float
+  public var minFaceWidthPercentage: Swift.Float
+  public var maxFaceWidthPercentage: Swift.Float
+  public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 250, minFaceWidthPercentage: Swift.Float = 0.5, maxFaceWidthPercentage: Swift.Float = 1)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FaceScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: EkycID.FaceScannerCameraEventListener)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, useFrontCamera: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.FaceScannerCameraOptions?)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc deinit
+}
+public protocol FaceScannerEventListener {
+  func onInitialized()
+  func onFaceScanned(_ face: EkycID.LivenessFace)
+  func onFrameStatusChanged(_ frameStatus: EkycID.FrameStatus)
+  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
+}
 public class FaceScannerOptions {
   public var cameraOptions: EkycID.FaceScannerCameraOptions
   public init(cameraOptions: EkycID.FaceScannerCameraOptions = FaceScannerCameraOptions())
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FaceScannerView : UIKit.UIView, EkycID.FaceScannerCameraEventListener {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, useFrontCamera: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func start(options: EkycID.FaceScannerOptions? = nil)
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func nextImage()
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: EkycID.FaceScannerEventListener)
+  @_Concurrency.MainActor(unsafe) public func onInitialized()
+  @_Concurrency.MainActor(unsafe) public func onDetection(_ detection: EkycID.LivenessFace)
+  @_Concurrency.MainActor(unsafe) public func onFrame(_ frameStatus: EkycID.FrameStatus)
+  @_Concurrency.MainActor(unsafe) public func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
   @objc deinit
 }
 public enum FrameStatus : Swift.String {
@@ -379,23 +391,11 @@ public enum FrameStatus : Swift.String {
 public protocol HologramDetectionAdapter {
   func detect(image: UIKit.UIImage) -> Swift.Bool
 }
-public protocol FaceScannerEventListener {
-  func onInitialized()
-  func onFaceScanned(_ face: EkycID.LivenessFace)
-  func onFrameStatusChanged(_ frameStatus: EkycID.FrameStatus)
-  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
-}
 public class HologramDetectionHSV : EkycID.HologramDetectionAdapter {
   public init(threshold: Swift.Float)
   public func detect(image: UIKit.UIImage) -> Swift.Bool
   public func process(image: UIKit.UIImage) -> Swift.Bool
   @objc deinit
-}
-public protocol FaceScannerCameraEventListener {
-  func onInitialized()
-  func onDetection(_ detection: EkycID.LivenessFace)
-  func onFrame(_ frameStatus: EkycID.FrameStatus)
-  func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
 }
 public enum HologramDetectionOptions : Swift.String {
   case HSV
@@ -459,7 +459,7 @@ public class LivenessDetectionCameraOptions {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessDetectionCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
-  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.LivenessDetectionCameraEventListener)
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: EkycID.LivenessDetectionCameraEventListener)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) public func start(options: EkycID.LivenessDetectionCameraOptions? = nil)
   @_Concurrency.MainActor(unsafe) public func stop()
@@ -496,7 +496,7 @@ public class LivenessDetectionOptions {
   @_Concurrency.MainActor(unsafe) public func nextImage()
   @_Concurrency.MainActor(unsafe) public func start(options: EkycID.LivenessDetectionOptions? = nil)
   @_Concurrency.MainActor(unsafe) public func stop()
-  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.LivenessDetectionEventListener)
+  @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: EkycID.LivenessDetectionEventListener)
   @_Concurrency.MainActor(unsafe) public func onFrame(_ f: EkycID.FrameStatus)
   @_Concurrency.MainActor(unsafe) public func onPromptCompleted(completedPromptIndex: Swift.Int, success: Swift.Bool, progress: Swift.Float)
   @_Concurrency.MainActor(unsafe) public func onAllPromptsCompleted(_ detection: EkycID.LivenessDetectionResult)
