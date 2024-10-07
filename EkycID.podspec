@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '2.0.12'
+  s.version          = '2.0.3'
   s.summary          = 'An SDK to interact with EkycID services.'
 
 # This description is used to generate tags and improve search results.

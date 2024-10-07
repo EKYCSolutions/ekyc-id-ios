@@ -2317,7 +2317,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DocumentScannerCameraEventListener",
-                "printedName": "EkycID.DocumentScannerCameraEventListener",
+                "printedName": "any EkycID.DocumentScannerCameraEventListener",
                 "usr": "s:6EkycID34DocumentScannerCameraEventListenerP"
               }
             ],
@@ -2584,6 +2584,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -4185,7 +4192,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DocumentScannerEventListener",
-                "printedName": "EkycID.DocumentScannerEventListener",
+                "printedName": "any EkycID.DocumentScannerEventListener",
                 "usr": "s:6EkycID28DocumentScannerEventListenerP"
               }
             ],
@@ -4381,6 +4388,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -4692,6 +4706,43 @@
             "moduleName": "EkycID"
           },
           {
+            "kind": "Var",
+            "name": "PORTRAIT_NET",
+            "printedName": "PORTRAIT_NET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.EdgeDetectionModelType.Type) -> EkycID.EdgeDetectionModelType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EdgeDetectionModelType",
+                    "printedName": "EkycID.EdgeDetectionModelType",
+                    "usr": "s:6EkycID22EdgeDetectionModelTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.EdgeDetectionModelType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EdgeDetectionModelType",
+                        "printedName": "EkycID.EdgeDetectionModelType",
+                        "usr": "s:6EkycID22EdgeDetectionModelTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID22EdgeDetectionModelTypeO12PORTRAIT_NETyA2CmF",
+            "mangledName": "$s6EkycID22EdgeDetectionModelTypeO12PORTRAIT_NETyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -4808,6 +4859,103 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TensorFlowLite",
+        "printedName": "TensorFlowLite",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EdgeDetectionPortraitNet",
+        "printedName": "EdgeDetectionPortraitNet",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EdgeDetectionPortraitNet",
+                "printedName": "EkycID.EdgeDetectionPortraitNet",
+                "usr": "s:6EkycID24EdgeDetectionPortraitNetC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6EkycID24EdgeDetectionPortraitNetCACyKcfc",
+            "mangledName": "$s6EkycID24EdgeDetectionPortraitNetCACyKcfc",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "detect",
+            "printedName": "detect(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EkycID.EdgeDetectionResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EdgeDetectionResult",
+                    "printedName": "EkycID.EdgeDetectionResult",
+                    "usr": "s:6EkycID19EdgeDetectionResultC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImage",
+                "printedName": "CoreGraphics.CGImage",
+                "usr": "c:@T@CGImageRef"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID24EdgeDetectionPortraitNetC6detect5imageAA0cD6ResultCSgSo10CGImageRefa_tF",
+            "mangledName": "$s6EkycID24EdgeDetectionPortraitNetC6detect5imageAA0cD6ResultCSgSo10CGImageRefa_tF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6EkycID24EdgeDetectionPortraitNetC",
+        "mangledName": "$s6EkycID24EdgeDetectionPortraitNetC",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "EdgeDetectionAdapter",
+            "printedName": "EdgeDetectionAdapter",
+            "usr": "s:6EkycID20EdgeDetectionAdapterP",
+            "mangledName": "$s6EkycID20EdgeDetectionAdapterP"
           }
         ]
       },
@@ -5167,9 +5315,559 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "topLeftAngle",
+            "printedName": "topLeftAngle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvp",
+            "mangledName": "$s6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvg",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvs",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvM",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC12topLeftAngleSfSgvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "topRightAngle",
+            "printedName": "topRightAngle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID19EdgeDetectionResultC13topRightAngleSfSgvp",
+            "mangledName": "$s6EkycID19EdgeDetectionResultC13topRightAngleSfSgvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC13topRightAngleSfSgvg",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC13topRightAngleSfSgvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC13topRightAngleSfSgvs",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC13topRightAngleSfSgvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC13topRightAngleSfSgvM",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC13topRightAngleSfSgvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bottomLeftAngle",
+            "printedName": "bottomLeftAngle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvp",
+            "mangledName": "$s6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvg",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvs",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvM",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC15bottomLeftAngleSfSgvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bottomRightAngle",
+            "printedName": "bottomRightAngle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvp",
+            "mangledName": "$s6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvg",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvs",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvM",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC16bottomRightAngleSfSgvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "angleStandardDeviation",
+            "printedName": "angleStandardDeviation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvp",
+            "mangledName": "$s6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvg",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvs",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvM",
+                "mangledName": "$s6EkycID19EdgeDetectionResultC22angleStandardDeviationSfSgvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(topLeft:topRight:bottomLeft:bottomRight:)",
+            "printedName": "init(topLeft:topRight:bottomLeft:bottomRight:topLeftAngle:topRightAngle:bottomLeftAngle:bottomRightAngle:angleStandardDeviation:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5200,11 +5898,86 @@
                 "name": "Point",
                 "printedName": "EkycID.Point",
                 "usr": "s:6EkycID5PointV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6EkycID19EdgeDetectionResultC7topLeft0F5Right06bottomG00iH0AcA5PointV_A3Itcfc",
-            "mangledName": "$s6EkycID19EdgeDetectionResultC7topLeft0F5Right06bottomG00iH0AcA5PointV_A3Itcfc",
+            "usr": "s:6EkycID19EdgeDetectionResultC7topLeft0F5Right06bottomG00iH00fG5Angle0fhJ00igJ00ihJ022angleStandardDeviationAcA5PointV_A3NSfSgA4Otcfc",
+            "mangledName": "$s6EkycID19EdgeDetectionResultC7topLeft0F5Right06bottomG00iH00fG5Angle0fhJ00igJ00ihJ022angleStandardDeviationAcA5PointV_A3NSfSgA4Otcfc",
             "moduleName": "EkycID",
             "declAttributes": [
               "AccessControl"
@@ -8961,7 +9734,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FaceScannerCameraEventListener",
-                "printedName": "EkycID.FaceScannerCameraEventListener",
+                "printedName": "any EkycID.FaceScannerCameraEventListener",
                 "usr": "s:6EkycID30FaceScannerCameraEventListenerP"
               }
             ],
@@ -9228,6 +10001,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -9702,7 +10482,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "FaceScannerEventListener",
-                "printedName": "EkycID.FaceScannerEventListener",
+                "printedName": "any EkycID.FaceScannerEventListener",
                 "usr": "s:6EkycID24FaceScannerEventListenerP"
               }
             ],
@@ -9898,6 +10678,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -13296,7 +14083,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LivenessDetectionCameraEventListener",
-                "printedName": "EkycID.LivenessDetectionCameraEventListener",
+                "printedName": "any EkycID.LivenessDetectionCameraEventListener",
                 "usr": "s:6EkycID36LivenessDetectionCameraEventListenerP"
               }
             ],
@@ -13550,6 +14337,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -14577,7 +15371,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LivenessDetectionEventListener",
-                "printedName": "EkycID.LivenessDetectionEventListener",
+                "printedName": "any EkycID.LivenessDetectionEventListener",
                 "usr": "s:6EkycID30LivenessDetectionEventListenerP"
               }
             ],
@@ -14868,6 +15662,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -15731,6 +16532,43 @@
           },
           {
             "kind": "Var",
+            "name": "DRIVER_LICENSE_INT",
+            "printedName": "DRIVER_LICENSE_INT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.ObjectDetectionObjectType.Type) -> EkycID.ObjectDetectionObjectType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectDetectionObjectType",
+                    "printedName": "EkycID.ObjectDetectionObjectType",
+                    "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.ObjectDetectionObjectType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectDetectionObjectType",
+                        "printedName": "EkycID.ObjectDetectionObjectType",
+                        "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID015ObjectDetectionC4TypeO18DRIVER_LICENSE_INTyA2CmF",
+            "mangledName": "$s6EkycID015ObjectDetectionC4TypeO18DRIVER_LICENSE_INTyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
             "name": "LICENSE_PLATE_0_0",
             "printedName": "LICENSE_PLATE_0_0",
             "children": [
@@ -16175,6 +17013,117 @@
           },
           {
             "kind": "Var",
+            "name": "NATIONAL_ID_INT",
+            "printedName": "NATIONAL_ID_INT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.ObjectDetectionObjectType.Type) -> EkycID.ObjectDetectionObjectType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectDetectionObjectType",
+                    "printedName": "EkycID.ObjectDetectionObjectType",
+                    "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.ObjectDetectionObjectType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectDetectionObjectType",
+                        "printedName": "EkycID.ObjectDetectionObjectType",
+                        "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID015ObjectDetectionC4TypeO09NATIONAL_B4_INTyA2CmF",
+            "mangledName": "$s6EkycID015ObjectDetectionC4TypeO09NATIONAL_B4_INTyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
+            "name": "NATIONAL_ID_INTBORDERCROSSING",
+            "printedName": "NATIONAL_ID_INTBORDERCROSSING",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.ObjectDetectionObjectType.Type) -> EkycID.ObjectDetectionObjectType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectDetectionObjectType",
+                    "printedName": "EkycID.ObjectDetectionObjectType",
+                    "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.ObjectDetectionObjectType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectDetectionObjectType",
+                        "printedName": "EkycID.ObjectDetectionObjectType",
+                        "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID015ObjectDetectionC4TypeO09NATIONAL_B18_INTBORDERCROSSINGyA2CmF",
+            "mangledName": "$s6EkycID015ObjectDetectionC4TypeO09NATIONAL_B18_INTBORDERCROSSINGyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
+            "name": "NATIONAL_ID_INTHOMERETURN",
+            "printedName": "NATIONAL_ID_INTHOMERETURN",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.ObjectDetectionObjectType.Type) -> EkycID.ObjectDetectionObjectType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectDetectionObjectType",
+                    "printedName": "EkycID.ObjectDetectionObjectType",
+                    "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.ObjectDetectionObjectType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectDetectionObjectType",
+                        "printedName": "EkycID.ObjectDetectionObjectType",
+                        "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID015ObjectDetectionC4TypeO09NATIONAL_B14_INTHOMERETURNyA2CmF",
+            "mangledName": "$s6EkycID015ObjectDetectionC4TypeO09NATIONAL_B14_INTHOMERETURNyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
             "name": "PASSPORT_0",
             "printedName": "PASSPORT_0",
             "children": [
@@ -16245,6 +17194,80 @@
             "declKind": "EnumElement",
             "usr": "s:6EkycID015ObjectDetectionC4TypeO14PASSPORT_0_TOPyA2CmF",
             "mangledName": "$s6EkycID015ObjectDetectionC4TypeO14PASSPORT_0_TOPyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
+            "name": "PASSPORT_INT",
+            "printedName": "PASSPORT_INT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.ObjectDetectionObjectType.Type) -> EkycID.ObjectDetectionObjectType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectDetectionObjectType",
+                    "printedName": "EkycID.ObjectDetectionObjectType",
+                    "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.ObjectDetectionObjectType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectDetectionObjectType",
+                        "printedName": "EkycID.ObjectDetectionObjectType",
+                        "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID015ObjectDetectionC4TypeO12PASSPORT_INTyA2CmF",
+            "mangledName": "$s6EkycID015ObjectDetectionC4TypeO12PASSPORT_INTyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
+            "name": "SOCIAL_SECURITY_INT",
+            "printedName": "SOCIAL_SECURITY_INT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.ObjectDetectionObjectType.Type) -> EkycID.ObjectDetectionObjectType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectDetectionObjectType",
+                    "printedName": "EkycID.ObjectDetectionObjectType",
+                    "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.ObjectDetectionObjectType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectDetectionObjectType",
+                        "printedName": "EkycID.ObjectDetectionObjectType",
+                        "usr": "s:6EkycID015ObjectDetectionC4TypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID015ObjectDetectionC4TypeO19SOCIAL_SECURITY_INTyA2CmF",
+            "mangledName": "$s6EkycID015ObjectDetectionC4TypeO19SOCIAL_SECURITY_INTyA2CmF",
             "moduleName": "EkycID"
           },
           {
@@ -17147,6 +18170,43 @@
             "declKind": "EnumElement",
             "usr": "s:6EkycID015ObjectDetectionC5GroupO15PASSPORT_BOTTOMyA2CmF",
             "mangledName": "$s6EkycID015ObjectDetectionC5GroupO15PASSPORT_BOTTOMyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
+            "name": "SOCIAL_SECURITY",
+            "printedName": "SOCIAL_SECURITY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.ObjectDetectionObjectGroup.Type) -> EkycID.ObjectDetectionObjectGroup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectDetectionObjectGroup",
+                    "printedName": "EkycID.ObjectDetectionObjectGroup",
+                    "usr": "s:6EkycID015ObjectDetectionC5GroupO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.ObjectDetectionObjectGroup.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObjectDetectionObjectGroup",
+                        "printedName": "EkycID.ObjectDetectionObjectGroup",
+                        "usr": "s:6EkycID015ObjectDetectionC5GroupO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID015ObjectDetectionC5GroupO15SOCIAL_SECURITYyA2CmF",
+            "mangledName": "$s6EkycID015ObjectDetectionC5GroupO15SOCIAL_SECURITYyA2CmF",
             "moduleName": "EkycID"
           },
           {
@@ -18564,6 +19624,27 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1311,
+      "length": 3,
+      "value": "7.0"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1378,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10830,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentScannerOptions.swift",
       "kind": "Array",
       "offset": 417,
@@ -18583,6 +19664,34 @@
       "offset": 713,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionPortraitNet.swift",
+      "kind": "StringLiteral",
+      "offset": 235,
+      "length": 26,
+      "value": "\"EdgeDetectionPortraitNet\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionPortraitNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 334,
+      "length": 3,
+      "value": "224"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionPortraitNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 433,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionPortraitNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 493,
+      "length": 3,
+      "value": "361"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/EdgeDetection\/EdgeDetectionSKSeg.swift",
@@ -18832,511 +19941,602 @@
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1652,
+      "offset": 1855,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1742,
+      "offset": 1945,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1842,
+      "offset": 2045,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 1932,
+      "offset": 2135,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2032,
+      "offset": 2235,
       "length": 18,
       "value": "\"DRIVER_LICENSE_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2100,
+      "offset": 2303,
       "length": 23,
       "value": "\"DRIVER_LICENSE_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 2381,
       "length": 18,
       "value": "\"DRIVER_LICENSE_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2246,
+      "offset": 2449,
       "length": 23,
       "value": "\"DRIVER_LICENSE_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2324,
+      "offset": 2527,
+      "length": 20,
+      "value": "\"DRIVER_LICENSE_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 2599,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2394,
+      "offset": 2669,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2464,
+      "offset": 2739,
       "length": 19,
       "value": "\"LICENSE_PLATE_1_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2534,
+      "offset": 2809,
       "length": 19,
       "value": "\"LICENSE_PLATE_2_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2604,
+      "offset": 2879,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2674,
+      "offset": 2949,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2744,
+      "offset": 3019,
       "length": 15,
       "value": "\"NATIONAL_ID_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2806,
+      "offset": 3081,
       "length": 20,
       "value": "\"NATIONAL_ID_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2878,
+      "offset": 3153,
       "length": 15,
       "value": "\"NATIONAL_ID_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2940,
+      "offset": 3215,
       "length": 20,
       "value": "\"NATIONAL_ID_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 3287,
       "length": 15,
       "value": "\"NATIONAL_ID_2\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3074,
+      "offset": 3349,
       "length": 20,
       "value": "\"NATIONAL_ID_2_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 3421,
+      "length": 17,
+      "value": "\"NATIONAL_ID_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3487,
+      "length": 31,
+      "value": "\"NATIONAL_ID_INTBORDERCROSSING\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3581,
+      "length": 27,
+      "value": "\"NATIONAL_ID_INTHOMERETURN\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3667,
       "length": 12,
       "value": "\"PASSPORT_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3202,
+      "offset": 3723,
       "length": 16,
       "value": "\"PASSPORT_0_TOP\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3266,
+      "offset": 3787,
+      "length": 14,
+      "value": "\"PASSPORT_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3847,
+      "length": 21,
+      "value": "\"SOCIAL_SECURITY_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3921,
       "length": 12,
       "value": "\"SUPERFIT_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3322,
+      "offset": 3977,
       "length": 17,
       "value": "\"SUPERFIT_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3388,
+      "offset": 4043,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3468,
+      "offset": 4123,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3558,
+      "offset": 4213,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3638,
+      "offset": 4293,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3728,
+      "offset": 4383,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_2\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3909,
+      "offset": 4564,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3998,
+      "offset": 4653,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4092,
+      "offset": 4747,
       "length": 29,
       "value": "\"COVID_19_VACCINATION_CARD_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4181,
+      "offset": 4836,
       "length": 34,
       "value": "\"COVID_19_VACCINATION_CARD_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4275,
+      "offset": 4930,
       "length": 18,
       "value": "\"DRIVER_LICENSE_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4342,
+      "offset": 4997,
       "length": 23,
       "value": "\"DRIVER_LICENSE_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4414,
+      "offset": 5069,
       "length": 18,
       "value": "\"DRIVER_LICENSE_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4481,
+      "offset": 5136,
       "length": 23,
       "value": "\"DRIVER_LICENSE_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4553,
+      "offset": 5208,
+      "length": 20,
+      "value": "\"DRIVER_LICENSE_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5277,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4620,
+      "offset": 5344,
       "length": 19,
       "value": "\"LICENSE_PLATE_0_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4687,
+      "offset": 5411,
       "length": 19,
       "value": "\"LICENSE_PLATE_1_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4754,
+      "offset": 5478,
       "length": 19,
       "value": "\"LICENSE_PLATE_2_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4821,
+      "offset": 5545,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4888,
+      "offset": 5612,
       "length": 19,
       "value": "\"LICENSE_PLATE_3_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 4955,
+      "offset": 5679,
       "length": 15,
       "value": "\"NATIONAL_ID_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5016,
+      "offset": 5740,
       "length": 20,
       "value": "\"NATIONAL_ID_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5082,
+      "offset": 5806,
       "length": 15,
       "value": "\"NATIONAL_ID_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5143,
+      "offset": 5867,
       "length": 20,
       "value": "\"NATIONAL_ID_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5209,
+      "offset": 5933,
       "length": 15,
       "value": "\"NATIONAL_ID_2\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5270,
+      "offset": 5994,
       "length": 20,
       "value": "\"NATIONAL_ID_2_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5336,
+      "offset": 6060,
+      "length": 17,
+      "value": "\"NATIONAL_ID_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6123,
+      "length": 31,
+      "value": "\"NATIONAL_ID_INTBORDERCROSSING\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6200,
+      "length": 27,
+      "value": "\"NATIONAL_ID_INTHOMERETURN\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6273,
       "length": 12,
       "value": "\"PASSPORT_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5391,
+      "offset": 6328,
       "length": 16,
       "value": "\"PASSPORT_0_TOP\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5450,
+      "offset": 6387,
+      "length": 14,
+      "value": "\"PASSPORT_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6444,
+      "length": 21,
+      "value": "\"SOCIAL_SECURITY_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6515,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5529,
+      "offset": 6594,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5613,
+      "offset": 6678,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_1\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5692,
+      "offset": 6757,
       "length": 29,
       "value": "\"VEHICLE_REGISTRATION_1_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5776,
+      "offset": 6841,
       "length": 24,
       "value": "\"VEHICLE_REGISTRATION_2\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5855,
+      "offset": 6920,
       "length": 12,
       "value": "\"SUPERFIT_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5908,
+      "offset": 6973,
       "length": 17,
       "value": "\"SUPERFIT_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 6069,
+      "offset": 7134,
       "length": 16,
       "value": "\"DRIVER_LICENSE\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 6317,
+      "offset": 7436,
       "length": 13,
       "value": "\"NATIONAL_ID\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 6653,
+      "offset": 7949,
       "length": 15,
       "value": "\"LICENSE_PLATE\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7000,
+      "offset": 8296,
       "length": 22,
       "value": "\"VEHICLE_REGISTRATION\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7336,
+      "offset": 8632,
       "length": 10,
       "value": "\"PASSPORT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7456,
+      "offset": 8800,
       "length": 27,
       "value": "\"COVID_19_VACCINATION_CARD\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7759,
+      "offset": 9103,
+      "length": 17,
+      "value": "\"SOCIAL_SECURITY\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 9190,
       "length": 8,
       "value": "\"OTHERS\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7878,
+      "offset": 9309,
       "length": 22,
       "value": "\"DRIVER_LICENSE_FRONT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8018,
+      "offset": 9449,
       "length": 21,
       "value": "\"DRIVER_LICENSE_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8167,
+      "offset": 9598,
       "length": 19,
       "value": "\"NATIONAL_ID_FRONT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8347,
+      "offset": 9956,
       "length": 18,
       "value": "\"NATIONAL_ID_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8541,
+      "offset": 10150,
       "length": 28,
       "value": "\"VEHICLE_REGISTRATION_FRONT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8757,
+      "offset": 10366,
       "length": 27,
       "value": "\"VEHICLE_REGISTRATION_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8924,
+      "offset": 10533,
       "length": 17,
       "value": "\"PASSPORT_BOTTOM\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 9001,
+      "offset": 10658,
       "length": 14,
       "value": "\"PASSPORT_TOP\""
     }
