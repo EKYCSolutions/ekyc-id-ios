@@ -550,7 +550,6 @@ public enum ObjectDetectionObjectType : Swift.String {
   case DRIVER_LICENSE_0_BACK
   case DRIVER_LICENSE_1
   case DRIVER_LICENSE_1_BACK
-  case DRIVER_LICENSE_INT
   case LICENSE_PLATE_0_0
   case LICENSE_PLATE_0_1
   case LICENSE_PLATE_1_0
@@ -563,13 +562,11 @@ public enum ObjectDetectionObjectType : Swift.String {
   case NATIONAL_ID_1_BACK
   case NATIONAL_ID_2
   case NATIONAL_ID_2_BACK
-  case NATIONAL_ID_INT
-  case NATIONAL_ID_INTBORDERCROSSING
-  case NATIONAL_ID_INTHOMERETURN
-  case PASSPORT_0
-  case PASSPORT_0_TOP
+  case PASSPORT_CA_0
+  case PASSPORT_KH_0
+  case PASSPORT_KH_0_TOP
+  case PASSPORT_SG_0
   case PASSPORT_INT
-  case SOCIAL_SECURITY_INT
   case SUPERFIT_0
   case SUPERFIT_0_BACK
   case VEHICLE_REGISTRATION_0
@@ -598,7 +595,6 @@ public enum ObjectDetectionObjectGroup : Swift.String {
   case PASSPORT
   case PASSPORT_TOP
   case PASSPORT_BOTTOM
-  case SOCIAL_SECURITY
   case OTHERS
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
