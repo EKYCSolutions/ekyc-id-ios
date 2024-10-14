@@ -19962,384 +19962,391 @@
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
       "offset": 3474,
-      "length": 12,
-      "value": "\"SUPERFIT_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 3530,
-      "length": 17,
-      "value": "\"SUPERFIT_0_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 3596,
-      "length": 24,
-      "value": "\"VEHICLE_REGISTRATION_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 3676,
-      "length": 29,
-      "value": "\"VEHICLE_REGISTRATION_0_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 3766,
-      "length": 24,
-      "value": "\"VEHICLE_REGISTRATION_1\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 3846,
-      "length": 29,
-      "value": "\"VEHICLE_REGISTRATION_1_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 3936,
-      "length": 24,
-      "value": "\"VEHICLE_REGISTRATION_2\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4117,
-      "length": 29,
-      "value": "\"COVID_19_VACCINATION_CARD_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4206,
-      "length": 34,
-      "value": "\"COVID_19_VACCINATION_CARD_0_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4300,
-      "length": 29,
-      "value": "\"COVID_19_VACCINATION_CARD_1\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4389,
-      "length": 34,
-      "value": "\"COVID_19_VACCINATION_CARD_1_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4483,
-      "length": 18,
-      "value": "\"DRIVER_LICENSE_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4550,
-      "length": 23,
-      "value": "\"DRIVER_LICENSE_0_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4622,
-      "length": 18,
-      "value": "\"DRIVER_LICENSE_1\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4689,
-      "length": 23,
-      "value": "\"DRIVER_LICENSE_1_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4761,
-      "length": 19,
-      "value": "\"LICENSE_PLATE_0_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4828,
-      "length": 19,
-      "value": "\"LICENSE_PLATE_0_1\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4895,
-      "length": 19,
-      "value": "\"LICENSE_PLATE_1_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 4962,
-      "length": 19,
-      "value": "\"LICENSE_PLATE_2_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5029,
-      "length": 19,
-      "value": "\"LICENSE_PLATE_3_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5096,
-      "length": 19,
-      "value": "\"LICENSE_PLATE_3_1\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5163,
-      "length": 15,
-      "value": "\"NATIONAL_ID_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5224,
-      "length": 20,
-      "value": "\"NATIONAL_ID_0_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5290,
-      "length": 15,
-      "value": "\"NATIONAL_ID_1\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5351,
-      "length": 20,
-      "value": "\"NATIONAL_ID_1_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5417,
-      "length": 15,
-      "value": "\"NATIONAL_ID_2\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5478,
-      "length": 20,
-      "value": "\"NATIONAL_ID_2_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5544,
-      "length": 15,
-      "value": "\"PASSPORT_CA_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5602,
-      "length": 15,
-      "value": "\"PASSPORT_KH_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5660,
-      "length": 19,
-      "value": "\"PASSPORT_KH_0_TOP\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5722,
-      "length": 15,
-      "value": "\"PASSPORT_SG_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5780,
-      "length": 16,
-      "value": "\"PASSPORT_0_TOP\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5839,
       "length": 14,
       "value": "\"PASSPORT_INT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5896,
-      "length": 24,
-      "value": "\"VEHICLE_REGISTRATION_0\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 5975,
-      "length": 29,
-      "value": "\"VEHICLE_REGISTRATION_0_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 6059,
-      "length": 24,
-      "value": "\"VEHICLE_REGISTRATION_1\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 6138,
-      "length": 29,
-      "value": "\"VEHICLE_REGISTRATION_1_BACK\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 6222,
-      "length": 24,
-      "value": "\"VEHICLE_REGISTRATION_2\""
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 6301,
+      "offset": 3534,
       "length": 12,
       "value": "\"SUPERFIT_0\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 6354,
+      "offset": 3590,
       "length": 17,
       "value": "\"SUPERFIT_0_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 6515,
+      "offset": 3656,
+      "length": 24,
+      "value": "\"VEHICLE_REGISTRATION_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3736,
+      "length": 29,
+      "value": "\"VEHICLE_REGISTRATION_0_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3826,
+      "length": 24,
+      "value": "\"VEHICLE_REGISTRATION_1\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3906,
+      "length": 29,
+      "value": "\"VEHICLE_REGISTRATION_1_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 3996,
+      "length": 24,
+      "value": "\"VEHICLE_REGISTRATION_2\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4177,
+      "length": 29,
+      "value": "\"COVID_19_VACCINATION_CARD_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4266,
+      "length": 34,
+      "value": "\"COVID_19_VACCINATION_CARD_0_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4360,
+      "length": 29,
+      "value": "\"COVID_19_VACCINATION_CARD_1\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4449,
+      "length": 34,
+      "value": "\"COVID_19_VACCINATION_CARD_1_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4543,
+      "length": 18,
+      "value": "\"DRIVER_LICENSE_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4610,
+      "length": 23,
+      "value": "\"DRIVER_LICENSE_0_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4682,
+      "length": 18,
+      "value": "\"DRIVER_LICENSE_1\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4749,
+      "length": 23,
+      "value": "\"DRIVER_LICENSE_1_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4821,
+      "length": 19,
+      "value": "\"LICENSE_PLATE_0_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4888,
+      "length": 19,
+      "value": "\"LICENSE_PLATE_0_1\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 4955,
+      "length": 19,
+      "value": "\"LICENSE_PLATE_1_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5022,
+      "length": 19,
+      "value": "\"LICENSE_PLATE_2_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5089,
+      "length": 19,
+      "value": "\"LICENSE_PLATE_3_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5156,
+      "length": 19,
+      "value": "\"LICENSE_PLATE_3_1\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5223,
+      "length": 15,
+      "value": "\"NATIONAL_ID_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5284,
+      "length": 20,
+      "value": "\"NATIONAL_ID_0_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5350,
+      "length": 15,
+      "value": "\"NATIONAL_ID_1\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5411,
+      "length": 20,
+      "value": "\"NATIONAL_ID_1_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5477,
+      "length": 15,
+      "value": "\"NATIONAL_ID_2\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5538,
+      "length": 20,
+      "value": "\"NATIONAL_ID_2_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5604,
+      "length": 15,
+      "value": "\"PASSPORT_CA_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5662,
+      "length": 15,
+      "value": "\"PASSPORT_KH_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5720,
+      "length": 19,
+      "value": "\"PASSPORT_KH_0_TOP\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5782,
+      "length": 15,
+      "value": "\"PASSPORT_SG_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5840,
+      "length": 16,
+      "value": "\"PASSPORT_0_TOP\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5899,
+      "length": 14,
+      "value": "\"PASSPORT_INT\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 5956,
+      "length": 24,
+      "value": "\"VEHICLE_REGISTRATION_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6035,
+      "length": 29,
+      "value": "\"VEHICLE_REGISTRATION_0_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6119,
+      "length": 24,
+      "value": "\"VEHICLE_REGISTRATION_1\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6198,
+      "length": 29,
+      "value": "\"VEHICLE_REGISTRATION_1_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6282,
+      "length": 24,
+      "value": "\"VEHICLE_REGISTRATION_2\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6361,
+      "length": 12,
+      "value": "\"SUPERFIT_0\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6414,
+      "length": 17,
+      "value": "\"SUPERFIT_0_BACK\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 6575,
       "length": 16,
       "value": "\"DRIVER_LICENSE\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 6764,
+      "offset": 6824,
       "length": 13,
       "value": "\"NATIONAL_ID\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7101,
+      "offset": 7161,
       "length": 15,
       "value": "\"LICENSE_PLATE\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7448,
+      "offset": 7508,
       "length": 22,
       "value": "\"VEHICLE_REGISTRATION\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 7784,
+      "offset": 7844,
       "length": 10,
       "value": "\"PASSPORT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8056,
+      "offset": 8116,
       "length": 27,
       "value": "\"COVID_19_VACCINATION_CARD\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8359,
+      "offset": 8419,
       "length": 8,
       "value": "\"OTHERS\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8478,
+      "offset": 8538,
       "length": 22,
       "value": "\"DRIVER_LICENSE_FRONT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8618,
+      "offset": 8678,
       "length": 21,
       "value": "\"DRIVER_LICENSE_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8767,
+      "offset": 8827,
       "length": 19,
       "value": "\"NATIONAL_ID_FRONT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 8948,
+      "offset": 9008,
       "length": 18,
       "value": "\"NATIONAL_ID_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 9142,
+      "offset": 9202,
       "length": 28,
       "value": "\"VEHICLE_REGISTRATION_FRONT\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 9358,
+      "offset": 9418,
       "length": 27,
       "value": "\"VEHICLE_REGISTRATION_BACK\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 9525,
+      "offset": 9585,
       "length": 17,
       "value": "\"PASSPORT_BOTTOM\""
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionOptions.swift",
       "kind": "StringLiteral",
-      "offset": 9751,
+      "offset": 9811,
       "length": 14,
       "value": "\"PASSPORT_TOP\""
     }
