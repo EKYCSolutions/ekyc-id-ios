@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage*) warpImage: (UIImage *) src :(NSArray *) corners;
 + (double) detectHologram: (UIImage *) inputImage;
 + (void) calculateBackgroundColorHSVBound;
-
++ (NSArray*)vChannel: (UIImage*) inputImage;
 @end
 
 

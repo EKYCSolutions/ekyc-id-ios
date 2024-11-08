@@ -31,6 +31,14 @@ public class BlackWhiteDetection {
 public protocol BlackWhiteDetectionAdapter {
   func detect(image: UIKit.UIImage) -> Swift.Bool?
 }
+public enum BrightnessDetectionModelType : Swift.String {
+  case DEFAULT
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @available(iOS 16.0, *)
 public class BlackWhiteDetectionCOEFF : EkycID.BlackWhiteDetectionAdapter {
   public init(threshold: Swift.Float)
@@ -104,7 +112,9 @@ public class DocumentScannerCameraOptions {
   public var roiSize: Swift.Float
   public var minDocWidthPercentage: Swift.Float
   public var maxDocWidthPercentage: Swift.Float
-  public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 100, minDocWidthPercentage: Swift.Float = 0.7, maxDocWidthPercentage: Swift.Float = 1)
+  public var minBrightness: Swift.Float
+  public var maxBrightness: Swift.Float
+  public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 100, minDocWidthPercentage: Swift.Float = 0.7, maxDocWidthPercentage: Swift.Float = 1, minBrightness: Swift.Float = 0.3, maxBrightness: Swift.Float = 0.8)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
@@ -193,6 +203,16 @@ public enum EdgeDetectionModelType : Swift.String {
 public class EdgeDetectionPortraitNet : EkycID.EdgeDetectionAdapter {
   public init() throws
   public func detect(image: CoreGraphics.CGImage) -> EkycID.EdgeDetectionResult?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BrightnessDetection {
+  public func detect(image: UIKit.UIImage, minBrightness: Swift.Float, maxBrightness: Swift.Float) -> EkycID.BrightnessDetectionResult
+  public class Builder {
+    public init()
+    public func setModelType(modelType: EkycID.BrightnessDetectionModelType) -> EkycID.BrightnessDetection.Builder
+    public func build() throws -> EkycID.BrightnessDetection
+    @objc deinit
+  }
   @objc deinit
 }
 public class EdgeDetectionResult {
@@ -330,6 +350,23 @@ public class FaceScannerCameraOptions {
   public init(captureDurationCountDown: Swift.Int = 3, faceCropScale: Swift.Float = 1.4, roiSize: Swift.Float = 250, minFaceWidthPercentage: Swift.Float = 0.5, maxFaceWidthPercentage: Swift.Float = 1)
   @objc deinit
 }
+public enum BrightnessStatus : Swift.String {
+  case TOO_BRIGHT
+  case TOO_DARK
+  case GLARE
+  case ACCEPTABLE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class BrightnessDetectionResult {
+  public var brightness: Swift.Float
+  public var status: EkycID.BrightnessStatus?
+  public init(brightness: Swift.Float, status: EkycID.BrightnessStatus? = nil)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FaceScannerCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
   @_Concurrency.MainActor(unsafe) public func addListener(_ eventListener: any EkycID.FaceScannerCameraEventListener)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -345,6 +382,9 @@ public protocol FaceScannerEventListener {
   func onFaceScanned(_ face: EkycID.LivenessFace)
   func onFrameStatusChanged(_ frameStatus: EkycID.FrameStatus)
   func onCaptureCountDownChanged(current: Swift.Int, max: Swift.Int)
+}
+public protocol BrightnessDetectionAdapter {
+  func detect(image: UIKit.UIImage, minBrightness: Swift.Float, maxBrightness: Swift.Float) -> EkycID.BrightnessDetectionResult
 }
 public class FaceScannerOptions {
   public var cameraOptions: EkycID.FaceScannerCameraOptions
@@ -375,6 +415,9 @@ public enum FrameStatus : Swift.String {
   case DOCUMENT_NOT_IN_CENTER
   case DOCUMENT_BLUR
   case CANNOT_GRAB_DOCUMENT
+  case DOCUMENT_TOO_DARK
+  case DOCUMENT_TOO_BRIGHT
+  case DOCUMENT_GLARE
   case NO_FACE_FOUND
   case FACE_FOUND
   case FACE_TOO_BIG
@@ -607,6 +650,11 @@ public let ObjectDetectionObjectTypeToObjectGroupMapping: [Swift.String : EkycID
 public let ObjectDetectionObjectGroupToObjectTypesMapping: [Swift.String : [EkycID.ObjectDetectionObjectType]]
 public let DOCUMENTS_WITH_FACE: [EkycID.ObjectDetectionObjectType]
 public let DOCUMENTS_WITH_SECONDARY_SIDE: [EkycID.ObjectDetectionObjectType]
+public class BrightnessDetectionDefault : EkycID.BrightnessDetectionAdapter {
+  public init()
+  public func detect(image: UIKit.UIImage, minBrightness: Swift.Float = 90, maxBrightness: Swift.Float = 200) -> EkycID.BrightnessDetectionResult
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class ObjectDetectionResult {
   public var objectType: EkycID.ObjectDetectionObjectType
   public var score: Swift.Float
@@ -621,6 +669,9 @@ public struct Point {
   public var y: Swift.Float
   public init(x: Swift.Float, y: Swift.Float)
 }
+extension EkycID.BrightnessDetectionModelType : Swift.Equatable {}
+extension EkycID.BrightnessDetectionModelType : Swift.Hashable {}
+extension EkycID.BrightnessDetectionModelType : Swift.RawRepresentable {}
 extension EkycID.BlackWhiteDetectionOptions : Swift.Equatable {}
 extension EkycID.BlackWhiteDetectionOptions : Swift.Hashable {}
 extension EkycID.BlackWhiteDetectionOptions : Swift.RawRepresentable {}
@@ -648,6 +699,9 @@ extension EkycID.FaceDetectionHeadDirection : Swift.RawRepresentable {}
 extension EkycID.FaceDetectionEyesStatus : Swift.Equatable {}
 extension EkycID.FaceDetectionEyesStatus : Swift.Hashable {}
 extension EkycID.FaceDetectionEyesStatus : Swift.RawRepresentable {}
+extension EkycID.BrightnessStatus : Swift.Equatable {}
+extension EkycID.BrightnessStatus : Swift.Hashable {}
+extension EkycID.BrightnessStatus : Swift.RawRepresentable {}
 extension EkycID.FrameStatus : Swift.Equatable {}
 extension EkycID.FrameStatus : Swift.Hashable {}
 extension EkycID.FrameStatus : Swift.RawRepresentable {}
