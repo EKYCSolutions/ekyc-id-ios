@@ -136,7 +136,7 @@ extension AVFoundation.AVCaptureDevice {
   public func centerFocus()
 }
 public class DocumentDetection {
-  public init(options: EkycID.DocumentScannerCameraOptions?)
+  public init(options: EkycID.DocumentScannerCameraOptions? = nil)
   public func setWhiteList(_ whiteList: [EkycID.ObjectDetectionObjectType])
   public func detect(image: UIKit.UIImage) throws -> EkycID.DocumentScannerResult?
   @objc deinit
