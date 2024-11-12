@@ -1639,7 +1639,7 @@
           {
             "kind": "Function",
             "name": "detect",
-            "printedName": "detect(image:minBrightness:maxBrightness:)",
+            "printedName": "detect(image:minBrightness:maxBrightness:checkGlare:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1664,11 +1664,17 @@
                 "name": "Float",
                 "printedName": "Swift.Float",
                 "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6EkycID19BrightnessDetectionC6detect5image03minC003maxC0AA0cD6ResultCSo7UIImageC_S2ftF",
-            "mangledName": "$s6EkycID19BrightnessDetectionC6detect5image03minC003maxC0AA0cD6ResultCSo7UIImageC_S2ftF",
+            "usr": "s:6EkycID19BrightnessDetectionC6detect5image03minC003maxC010checkGlareAA0cD6ResultCSo7UIImageC_S2fSbtF",
+            "mangledName": "$s6EkycID19BrightnessDetectionC6detect5image03minC003maxC010checkGlareAA0cD6ResultCSo7UIImageC_S2fSbtF",
             "moduleName": "EkycID",
             "declAttributes": [
               "AccessControl"
@@ -1787,7 +1793,7 @@
           {
             "kind": "Function",
             "name": "detect",
-            "printedName": "detect(image:minBrightness:maxBrightness:)",
+            "printedName": "detect(image:minBrightness:maxBrightness:checkGlare:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1812,11 +1818,17 @@
                 "name": "Float",
                 "printedName": "Swift.Float",
                 "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6EkycID26BrightnessDetectionAdapterP6detect5image03minC003maxC0AA0cD6ResultCSo7UIImageC_S2ftF",
-            "mangledName": "$s6EkycID26BrightnessDetectionAdapterP6detect5image03minC003maxC0AA0cD6ResultCSo7UIImageC_S2ftF",
+            "usr": "s:6EkycID26BrightnessDetectionAdapterP6detect5image03minC003maxC010checkGlareAA0cD6ResultCSo7UIImageC_S2fSbtF",
+            "mangledName": "$s6EkycID26BrightnessDetectionAdapterP6detect5image03minC003maxC010checkGlareAA0cD6ResultCSo7UIImageC_S2fSbtF",
             "moduleName": "EkycID",
             "genericSig": "<τ_0_0 where τ_0_0 : EkycID.BrightnessDetectionAdapter>",
             "sugared_genericSig": "<Self where Self : EkycID.BrightnessDetectionAdapter>",
@@ -1879,7 +1891,7 @@
           {
             "kind": "Function",
             "name": "detect",
-            "printedName": "detect(image:minBrightness:maxBrightness:)",
+            "printedName": "detect(image:minBrightness:maxBrightness:checkGlare:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1897,20 +1909,24 @@
                 "kind": "TypeNominal",
                 "name": "Float",
                 "printedName": "Swift.Float",
-                "hasDefaultArg": true,
                 "usr": "s:Sf"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Float",
                 "printedName": "Swift.Float",
-                "hasDefaultArg": true,
                 "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6EkycID26BrightnessDetectionDefaultC6detect5image03minC003maxC0AA0cD6ResultCSo7UIImageC_S2ftF",
-            "mangledName": "$s6EkycID26BrightnessDetectionDefaultC6detect5image03minC003maxC0AA0cD6ResultCSo7UIImageC_S2ftF",
+            "usr": "s:6EkycID26BrightnessDetectionDefaultC6detect5image03minC003maxC010checkGlareAA0cD6ResultCSo7UIImageC_S2fSbtF",
+            "mangledName": "$s6EkycID26BrightnessDetectionDefaultC6detect5image03minC003maxC010checkGlareAA0cD6ResultCSo7UIImageC_S2fSbtF",
             "moduleName": "EkycID",
             "declAttributes": [
               "AccessControl"
@@ -2676,18 +2692,32 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init()",
+            "printedName": "init(options:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "DocumentDetection",
                 "printedName": "EkycID.DocumentDetection",
                 "usr": "s:6EkycID17DocumentDetectionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EkycID.DocumentScannerCameraOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentScannerCameraOptions",
+                    "printedName": "EkycID.DocumentScannerCameraOptions",
+                    "usr": "s:6EkycID28DocumentScannerCameraOptionsC"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6EkycID17DocumentDetectionCACycfc",
-            "mangledName": "$s6EkycID17DocumentDetectionCACycfc",
+            "usr": "s:6EkycID17DocumentDetectionC7optionsAcA0C20ScannerCameraOptionsCSg_tcfc",
+            "mangledName": "$s6EkycID17DocumentDetectionC7optionsAcA0C20ScannerCameraOptionsCSg_tcfc",
             "moduleName": "EkycID",
             "declAttributes": [
               "AccessControl"
@@ -20845,30 +20875,23 @@
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/BrightnessDetection\/BrightnessDetectionDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 303,
+      "offset": 661,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/BrightnessDetection\/BrightnessDetectionDefault.swift",
       "kind": "IntegerLiteral",
-      "offset": 338,
+      "offset": 696,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/BrightnessDetection\/BrightnessDetectionDefault.swift",
-      "kind": "IntegerLiteral",
-      "offset": 563,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/BrightnessDetection\/BrightnessDetectionDefault.swift",
-      "kind": "IntegerLiteral",
-      "offset": 598,
-      "length": 3,
-      "value": "200"
+      "kind": "BooleanLiteral",
+      "offset": 728,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/DocumentDetection.swift",
@@ -20978,7 +21001,7 @@
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/DocumentScanner\/CameraView\/DocumentScannerCameraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11755,
+      "offset": 11786,
       "length": 4,
       "value": "true"
     },

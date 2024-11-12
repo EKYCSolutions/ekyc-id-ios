@@ -90,7 +90,7 @@ public class BoundingBox {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BrightnessDetection {
-  public func detect(image: UIKit.UIImage, minBrightness: Swift.Float, maxBrightness: Swift.Float) -> EkycID.BrightnessDetectionResult
+  public func detect(image: UIKit.UIImage, minBrightness: Swift.Float, maxBrightness: Swift.Float, checkGlare: Swift.Bool) -> EkycID.BrightnessDetectionResult
   public class Builder {
     public init()
     public func setModelType(modelType: EkycID.BrightnessDetectionModelType) -> EkycID.BrightnessDetection.Builder
@@ -100,11 +100,11 @@ public class BoundingBox {
   @objc deinit
 }
 public protocol BrightnessDetectionAdapter {
-  func detect(image: UIKit.UIImage, minBrightness: Swift.Float, maxBrightness: Swift.Float) -> EkycID.BrightnessDetectionResult
+  func detect(image: UIKit.UIImage, minBrightness: Swift.Float, maxBrightness: Swift.Float, checkGlare: Swift.Bool) -> EkycID.BrightnessDetectionResult
 }
 public class BrightnessDetectionDefault : EkycID.BrightnessDetectionAdapter {
   public init()
-  public func detect(image: UIKit.UIImage, minBrightness: Swift.Float = 90, maxBrightness: Swift.Float = 200) -> EkycID.BrightnessDetectionResult
+  public func detect(image: UIKit.UIImage, minBrightness: Swift.Float, maxBrightness: Swift.Float, checkGlare: Swift.Bool) -> EkycID.BrightnessDetectionResult
   @objc deinit
 }
 public enum BrightnessDetectionModelType : Swift.String {
@@ -136,7 +136,7 @@ extension AVFoundation.AVCaptureDevice {
   public func centerFocus()
 }
 public class DocumentDetection {
-  public init()
+  public init(options: EkycID.DocumentScannerCameraOptions?)
   public func setWhiteList(_ whiteList: [EkycID.ObjectDetectionObjectType])
   public func detect(image: UIKit.UIImage) throws -> EkycID.DocumentScannerResult?
   @objc deinit
