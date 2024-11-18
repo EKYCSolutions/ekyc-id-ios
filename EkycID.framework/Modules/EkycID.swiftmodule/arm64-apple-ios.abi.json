@@ -8221,6 +8221,144 @@
         "moduleName": "EkycID"
       },
       {
+        "kind": "TypeDecl",
+        "name": "FaceCaptureDetection",
+        "printedName": "FaceCaptureDetection",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FaceCaptureDetection",
+                "printedName": "EkycID.FaceCaptureDetection",
+                "usr": "s:6EkycID20FaceCaptureDetectionC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EkycID.FaceScannerCameraOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FaceScannerCameraOptions",
+                    "printedName": "EkycID.FaceScannerCameraOptions",
+                    "usr": "s:6EkycID24FaceScannerCameraOptionsC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6EkycID20FaceCaptureDetectionC7optionsAcA0C20ScannerCameraOptionsCSg_tcfc",
+            "mangledName": "$s6EkycID20FaceCaptureDetectionC7optionsAcA0C20ScannerCameraOptionsCSg_tcfc",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "detect",
+            "printedName": "detect(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EkycID.LivenessFace?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LivenessFace",
+                    "printedName": "EkycID.LivenessFace",
+                    "usr": "s:6EkycID12LivenessFaceC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID20FaceCaptureDetectionC6detect5imageAA08LivenessC0CSgSo7UIImageC_tKF",
+            "mangledName": "$s6EkycID20FaceCaptureDetectionC6detect5imageAA08LivenessC0CSgSo7UIImageC_tKF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertToSRGB",
+            "printedName": "convertToSRGB(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID20FaceCaptureDetectionC13convertToSRGB5imageSo7UIImageCSgAG_tF",
+            "mangledName": "$s6EkycID20FaceCaptureDetectionC13convertToSRGB5imageSo7UIImageCSgAG_tF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6EkycID20FaceCaptureDetectionC",
+        "mangledName": "$s6EkycID20FaceCaptureDetectionC",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MLKitVision",
+        "printedName": "MLKitVision",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
         "kind": "Import",
         "name": "MLKitFaceDetection",
         "printedName": "MLKitFaceDetection",

@@ -302,6 +302,12 @@ public enum FaceBlockageDetectionModelType : Swift.String {
     get
   }
 }
+public class FaceCaptureDetection {
+  public init(options: EkycID.FaceScannerCameraOptions? = nil)
+  public func detect(image: UIKit.UIImage) throws -> EkycID.LivenessFace?
+  public func convertToSRGB(image: UIKit.UIImage) -> UIKit.UIImage?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class FaceDetection {
   public func detect(image: MLKitVision.VisionImage) -> [EkycID.FaceDetectionResult]?
   public func detect(image: UIKit.UIImage) -> [EkycID.FaceDetectionResult]?
