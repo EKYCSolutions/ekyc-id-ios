@@ -12993,6 +12993,43 @@
             "moduleName": "EkycID"
           },
           {
+            "kind": "Var",
+            "name": "PROMPT_FAILED",
+            "printedName": "PROMPT_FAILED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.FrameStatus.Type) -> EkycID.FrameStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FrameStatus",
+                    "printedName": "EkycID.FrameStatus",
+                    "usr": "s:6EkycID11FrameStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.FrameStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FrameStatus",
+                        "printedName": "EkycID.FrameStatus",
+                        "usr": "s:6EkycID11FrameStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID11FrameStatusO13PROMPT_FAILEDyA2CmF",
+            "mangledName": "$s6EkycID11FrameStatusO13PROMPT_FAILEDyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -15592,9 +15629,179 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "shouldResetAllPromptsOnFailure",
+            "printedName": "shouldResetAllPromptsOnFailure",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvp",
+            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvg",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvs",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvM",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldResetPromptOnFailure",
+            "printedName": "shouldResetPromptOnFailure",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvp",
+            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvg",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvs",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvM",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(prompts:promptTimerCountDownSec:)",
+            "printedName": "init(prompts:promptTimerCountDownSec:shouldResetAllPromptsOnFailure:shouldResetPromptOnFailure:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15623,11 +15830,25 @@
                 "printedName": "Swift.Int",
                 "hasDefaultArg": true,
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSecACSayAA0C10PromptTypeOG_Sitcfc",
-            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSecACSayAA0C10PromptTypeOG_Sitcfc",
+            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec30shouldResetAllPromptsOnFailure0mn6PromptqR0ACSayAA0cS4TypeOG_SiS2btcfc",
+            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec30shouldResetAllPromptsOnFailure0mn6PromptqR0ACSayAA0cS4TypeOG_SiS2btcfc",
             "moduleName": "EkycID",
             "declAttributes": [
               "AccessControl"
@@ -21336,9 +21557,23 @@
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1844,
+      "offset": 1944,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1994,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2044,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
