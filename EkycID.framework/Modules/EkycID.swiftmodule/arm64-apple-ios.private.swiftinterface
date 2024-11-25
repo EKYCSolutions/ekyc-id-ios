@@ -527,9 +527,8 @@ public class LivenessFace {
 public class LivenessDetectionCameraOptions {
   public var prompts: [EkycID.LivenessPromptType]
   public var promptTimerCountDownSec: Swift.Int
-  public var shouldResetAllPromptsOnFailure: Swift.Bool
-  public var shouldResetPromptOnFailure: Swift.Bool
-  public init(prompts: [EkycID.LivenessPromptType] = [.LOOK_LEFT, .LOOK_RIGHT, .BLINKING], promptTimerCountDownSec: Swift.Int = 5, shouldResetAllPromptsOnFailure: Swift.Bool = false, shouldResetPromptOnFailure: Swift.Bool = false)
+  public var promptFailureResetType: EkycID.LivenessDetectionFailureResetType
+  public init(prompts: [EkycID.LivenessPromptType] = [.LOOK_LEFT, .LOOK_RIGHT, .BLINKING], promptTimerCountDownSec: Swift.Int = 5, promptFailureResetType: EkycID.LivenessDetectionFailureResetType = .MARK_AS_FAILURE)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessDetectionCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
@@ -562,6 +561,16 @@ public class LivenessDetectionOptions {
   public var rightFace: EkycID.LivenessFace?
   public var prompts: [EkycID.LivenessPrompt]
   @objc deinit
+}
+public enum LivenessDetectionFailureResetType {
+  case MARK_AS_FAILURE
+  case RESET_CURRENT
+  case RESET_FROM_START
+  public static func == (a: EkycID.LivenessDetectionFailureResetType, b: EkycID.LivenessDetectionFailureResetType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessDetectionView : UIKit.UIView, EkycID.LivenessDetectionCameraEventListener {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -726,6 +735,8 @@ extension EkycID.HologramDetectionOptions : Swift.RawRepresentable {}
 extension EkycID.LivenessPromptType : Swift.Equatable {}
 extension EkycID.LivenessPromptType : Swift.Hashable {}
 extension EkycID.LivenessPromptType : Swift.RawRepresentable {}
+extension EkycID.LivenessDetectionFailureResetType : Swift.Equatable {}
+extension EkycID.LivenessDetectionFailureResetType : Swift.Hashable {}
 extension EkycID.ObjectDetectionModelType : Swift.Equatable {}
 extension EkycID.ObjectDetectionModelType : Swift.Hashable {}
 extension EkycID.ObjectDetectionModelType : Swift.RawRepresentable {}

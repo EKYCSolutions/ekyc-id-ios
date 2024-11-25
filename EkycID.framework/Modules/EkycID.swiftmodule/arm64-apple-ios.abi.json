@@ -15630,19 +15630,19 @@
           },
           {
             "kind": "Var",
-            "name": "shouldResetAllPromptsOnFailure",
-            "printedName": "shouldResetAllPromptsOnFailure",
+            "name": "promptFailureResetType",
+            "printedName": "promptFailureResetType",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "LivenessDetectionFailureResetType",
+                "printedName": "EkycID.LivenessDetectionFailureResetType",
+                "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvp",
-            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvp",
+            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0Ovp",
+            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0Ovp",
             "moduleName": "EkycID",
             "declAttributes": [
               "HasStorage",
@@ -15657,14 +15657,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
+                    "name": "LivenessDetectionFailureResetType",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType",
+                    "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvg",
-                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvg",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0Ovg",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0Ovg",
                 "moduleName": "EkycID",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15681,14 +15681,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
+                    "name": "LivenessDetectionFailureResetType",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType",
+                    "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvs",
-                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvs",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0Ovs",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0Ovs",
                 "moduleName": "EkycID",
                 "implicit": true,
                 "accessorKind": "set"
@@ -15705,93 +15705,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvM",
-                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC30shouldResetAllPromptsOnFailureSbvM",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "shouldResetPromptOnFailure",
-            "printedName": "shouldResetPromptOnFailure",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvp",
-            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvp",
-            "moduleName": "EkycID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvg",
-                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvg",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvs",
-                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvs",
-                "moduleName": "EkycID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvM",
-                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC26shouldResetPromptOnFailureSbvM",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0OvM",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC22promptFailureResetTypeAA0cdhiJ0OvM",
                 "moduleName": "EkycID",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15801,7 +15716,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(prompts:promptTimerCountDownSec:shouldResetAllPromptsOnFailure:shouldResetPromptOnFailure:)",
+            "printedName": "init(prompts:promptTimerCountDownSec:promptFailureResetType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15833,22 +15748,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
+                "name": "LivenessDetectionFailureResetType",
+                "printedName": "EkycID.LivenessDetectionFailureResetType",
                 "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
+                "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec30shouldResetAllPromptsOnFailure0mn6PromptqR0ACSayAA0cS4TypeOG_SiS2btcfc",
-            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec30shouldResetAllPromptsOnFailure0mn6PromptqR0ACSayAA0cS4TypeOG_SiS2btcfc",
+            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec0H16FailureResetTypeACSayAA0c6PromptO0OG_SiAA0cdmnO0Otcfc",
+            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec0H16FailureResetTypeACSayAA0c6PromptO0OG_SiAA0cdmnO0Otcfc",
             "moduleName": "EkycID",
             "declAttributes": [
               "AccessControl"
@@ -17019,6 +16927,243 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "EkycID"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LivenessDetectionFailureResetType",
+        "printedName": "LivenessDetectionFailureResetType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "MARK_AS_FAILURE",
+            "printedName": "MARK_AS_FAILURE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.LivenessDetectionFailureResetType.Type) -> EkycID.LivenessDetectionFailureResetType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LivenessDetectionFailureResetType",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType",
+                    "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LivenessDetectionFailureResetType",
+                        "printedName": "EkycID.LivenessDetectionFailureResetType",
+                        "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO15MARK_AS_FAILUREyA2CmF",
+            "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO15MARK_AS_FAILUREyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
+            "name": "RESET_CURRENT",
+            "printedName": "RESET_CURRENT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.LivenessDetectionFailureResetType.Type) -> EkycID.LivenessDetectionFailureResetType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LivenessDetectionFailureResetType",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType",
+                    "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LivenessDetectionFailureResetType",
+                        "printedName": "EkycID.LivenessDetectionFailureResetType",
+                        "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO13RESET_CURRENTyA2CmF",
+            "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO13RESET_CURRENTyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Var",
+            "name": "RESET_FROM_START",
+            "printedName": "RESET_FROM_START",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EkycID.LivenessDetectionFailureResetType.Type) -> EkycID.LivenessDetectionFailureResetType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LivenessDetectionFailureResetType",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType",
+                    "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EkycID.LivenessDetectionFailureResetType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LivenessDetectionFailureResetType",
+                        "printedName": "EkycID.LivenessDetectionFailureResetType",
+                        "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO16RESET_FROM_STARTyA2CmF",
+            "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO16RESET_FROM_STARTyA2CmF",
+            "moduleName": "EkycID"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessDetectionFailureResetType",
+                "printedName": "EkycID.LivenessDetectionFailureResetType",
+                "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LivenessDetectionFailureResetType",
+                "printedName": "EkycID.LivenessDetectionFailureResetType",
+                "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "EkycID",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO9hashValueSivp",
+            "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO9hashValueSivp",
+            "moduleName": "EkycID",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO9hashValueSivg",
+                "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO9hashValueSivg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "EkycID",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO",
+        "mangledName": "$s6EkycID33LivenessDetectionFailureResetTypeO",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -21557,23 +21702,9 @@
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1944,
+      "offset": 1917,
       "length": 1,
       "value": "5"
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1994,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2044,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
