@@ -2794,6 +2794,42 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "detectWarped",
+            "printedName": "detectWarped(image:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EkycID.DocumentScannerResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentScannerResult",
+                    "printedName": "EkycID.DocumentScannerResult",
+                    "usr": "s:6EkycID21DocumentScannerResultC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6EkycID17DocumentDetectionC12detectWarped5imageAA0C13ScannerResultCSgSo7UIImageC_tKF",
+            "mangledName": "$s6EkycID17DocumentDetectionC12detectWarped5imageAA0C13ScannerResultCSgSo7UIImageC_tKF",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -13644,6 +13680,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ImageUtils",
         "printedName": "ImageUtils",
@@ -21688,14 +21731,14 @@
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/ImageUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 2450,
+      "offset": 3205,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/ImageUtils.swift",
       "kind": "FloatLiteral",
-      "offset": 2916,
+      "offset": 3671,
       "length": 3,
       "value": "2.0"
     },
