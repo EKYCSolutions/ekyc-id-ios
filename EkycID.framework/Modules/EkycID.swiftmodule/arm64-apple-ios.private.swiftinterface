@@ -529,7 +529,8 @@ public class LivenessDetectionCameraOptions {
   public var prompts: [EkycID.LivenessPromptType]
   public var promptTimerCountDownSec: Swift.Int
   public var promptFailureResetType: EkycID.LivenessDetectionFailureResetType
-  public init(prompts: [EkycID.LivenessPromptType] = [.LOOK_LEFT, .LOOK_RIGHT, .BLINKING], promptTimerCountDownSec: Swift.Int = 5, promptFailureResetType: EkycID.LivenessDetectionFailureResetType = .MARK_AS_FAILURE)
+  public var recordVideo: Swift.Bool
+  public init(prompts: [EkycID.LivenessPromptType] = [.LOOK_LEFT, .LOOK_RIGHT, .BLINKING], promptTimerCountDownSec: Swift.Int = 5, promptFailureResetType: EkycID.LivenessDetectionFailureResetType = .MARK_AS_FAILURE, recordVideo: Swift.Bool = false)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class LivenessDetectionCameraView : UIKit.UIView, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
@@ -561,6 +562,7 @@ public class LivenessDetectionOptions {
   public var leftFace: EkycID.LivenessFace?
   public var rightFace: EkycID.LivenessFace?
   public var prompts: [EkycID.LivenessPrompt]
+  public var livenessVideoURL: Swift.String?
   @objc deinit
 }
 public enum LivenessDetectionFailureResetType {

@@ -15757,9 +15757,94 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "recordVideo",
+            "printedName": "recordVideo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvp",
+            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvg",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvs",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvM",
+                "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC11recordVideoSbvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(prompts:promptTimerCountDownSec:promptFailureResetType:)",
+            "printedName": "init(prompts:promptTimerCountDownSec:promptFailureResetType:recordVideo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15795,11 +15880,18 @@
                 "printedName": "EkycID.LivenessDetectionFailureResetType",
                 "hasDefaultArg": true,
                 "usr": "s:6EkycID33LivenessDetectionFailureResetTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec0H16FailureResetTypeACSayAA0c6PromptO0OG_SiAA0cdmnO0Otcfc",
-            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec0H16FailureResetTypeACSayAA0c6PromptO0OG_SiAA0cdmnO0Otcfc",
+            "usr": "s:6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec0H16FailureResetType11recordVideoACSayAA0c6PromptO0OG_SiAA0cdmnO0OSbtcfc",
+            "mangledName": "$s6EkycID30LivenessDetectionCameraOptionsC7prompts23promptTimerCountDownSec0H16FailureResetType11recordVideoACSayAA0c6PromptO0OG_SiAA0cdmnO0OSbtcfc",
             "moduleName": "EkycID",
             "declAttributes": [
               "AccessControl"
@@ -16943,6 +17035,116 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "livenessVideoURL",
+            "printedName": "livenessVideoURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvp",
+            "mangledName": "$s6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvp",
+            "moduleName": "EkycID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvg",
+                "mangledName": "$s6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvg",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvs",
+                "mangledName": "$s6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvs",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvM",
+                "mangledName": "$s6EkycID23LivenessDetectionResultC16livenessVideoURLSSSgvM",
+                "moduleName": "EkycID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -17886,6 +18088,23 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "EkycID"
       },
       {
         "kind": "Import",
@@ -21745,9 +21964,16 @@
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 1917,
+      "offset": 1950,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2067,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
@@ -21765,66 +21991,101 @@
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "kind": "Array",
+      "offset": 992,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
+      "kind": "Array",
+      "offset": 1048,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 933,
+      "offset": 1093,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 974,
+      "offset": 1134,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "FloatLiteral",
-      "offset": 1066,
+      "offset": 1226,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "FloatLiteral",
-      "offset": 1107,
+      "offset": 1267,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1152,
+      "offset": 1312,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1203,
+      "offset": 1363,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "Array",
-      "offset": 1250,
+      "offset": 1410,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1333,
+      "offset": 1493,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/LivenessDetection\/CameraView\/LivenessDetectionCameraView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1375,
+      "offset": 1535,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 488,
+      "length": 4,
+      "value": "1920"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 502,
+      "length": 4,
+      "value": "1080"
     },
     {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
