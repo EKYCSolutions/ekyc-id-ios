@@ -18101,23 +18101,6 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "EkycID"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "EkycID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "CoreGraphics.CGImage",
         "printedName": "CoreGraphics.CGImage",
         "declKind": "Import",
@@ -21333,6 +21316,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EkycID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "EkycID"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AVCaptureDevice",
         "printedName": "AVCaptureDevice",
@@ -22067,27 +22067,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 442,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 488,
-      "length": 4,
-      "value": "1920"
-    },
-    {
-      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 502,
-      "length": 4,
-      "value": "1080"
-    },
-    {
       "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/ObjectDetection\/ObjectDetectionMobileNetSSD.swift",
       "kind": "Array",
       "offset": 317,
@@ -22667,6 +22646,27 @@
       "offset": 9811,
       "length": 14,
       "value": "\"PASSPORT_TOP\""
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 488,
+      "length": 4,
+      "value": "1920"
+    },
+    {
+      "filePath": "\/Users\/panharithsun\/Documents\/EYKC\/ekyc-id-monorepo\/ekyc-id-ios\/EkycID\/Classes\/Core\/Utils\/RecordingUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 502,
+      "length": 4,
+      "value": "1080"
     }
   ]
 }
