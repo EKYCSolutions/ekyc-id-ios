@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '2.0.33'
+  s.version          = '2.0.34'
   s.summary          = 'An SDK to interact with EkycID services.'
 
 # This description is used to generate tags and improve search results.
@@ -40,9 +40,7 @@ Pod::Spec.new do |s|
       'EkycID' => ['EkycID/Assets/*'],
     }
   else
-    s.public_header_files = "EkycID.framework/Headers/*.h"
-    s.source_files = "EkycID.framework/Headers/*.h"
-    s.vendored_frameworks = "EkycID.framework"
+    s.vendored_frameworks = "EkycID.xcframework"
     s.resource_bundles = {
       'EkycID' => ['EkycID/Assets/*'],
     }
