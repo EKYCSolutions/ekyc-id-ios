@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '2.0.34'
+  s.version          = '2.0.35'
   s.summary          = 'An SDK to interact with EkycID services.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Socret Lee' => 'ml-developer@ekycsolutions.com' }
   s.source           = { :git => 'https://github.com/EKYCSolutions/ekyc-id-ios.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '14.0'
 
   if ENV['POD_DEVELOPMENT'] == '1'
     s.source_files = 'EkycID/Classes/**/**/**/*'
