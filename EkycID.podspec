@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EkycID'
-  s.version          = '2.0.39'
+  s.version          = '2.0.40'
   s.summary          = 'An SDK to interact with EkycID services.'
 
 # This description is used to generate tags and improve search results.
@@ -49,5 +49,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'TensorFlowLiteSwift', '~> 2.12.0'
   s.dependency 'OpenCV', '4.3.0'
-  s.dependency 'GoogleMLKit/FaceDetection', '3.2.0'
+  s.dependency 'GoogleMLKit/FaceDetection', '6.0.0'
 end
